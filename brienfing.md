@@ -8,7 +8,7 @@
 
 # 3 - Qual o público alvo da empresa?
 
-## MEI's, pequenas, micro empresas ou médias empresas.
+## MEI's, pequenas, micro empresas ou médias empresas com potencial de geração de receita recorrente.
 
 # 4 - O projeto se refere  (1) site, (2) sistema  ou (3) aplicativo? Ou todos?
 
