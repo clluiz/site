@@ -14,7 +14,7 @@
 
 ## É um site pessoal com portfólio para divulgação do trabalho e um blog para publicação de conteúdo.
 
-# 5 - A empresa possui marca ou manuel de identidade visual?
+# 5 - A empresa possui marca ou manual de identidade visual?
 
 ## Sim
 
