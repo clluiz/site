@@ -6,8 +6,9 @@
   --primary-text: #FFE600;
   --light-gray: #C4C4C4;
   --gray: #BBBBBB;
-  --dark-gray: #969696;
-  --white: hsl(0, 0%, 100%);
+  --dark-gray: #666666;
+  --white: #FFFFFF;
+  --black: #000000;
 }
 
 * {
@@ -37,9 +38,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-
 /** estilos especifico dos componentes do site **/
-
 .hero-image {
   background-image: url('../images/pexels-pixabay-50711.jpg');
 }
@@ -87,6 +86,12 @@ h3 {
 
 .secao-servicos {
   min-height: 645px;
+  padding: 20px 0;
+}
+
+.secao-servicos > h2 {
+  margin-bottom: 40px;
+  color: var(--dark-gray);
 }
 
 .card-servico {
@@ -104,6 +109,7 @@ h3 {
 
 .card-body > .descricao-servico {
   font-size: 1rem;
+  color: var(--black);
   font-weight: 400;
   text-align: center;
 }
