@@ -95,10 +95,11 @@ h3 {
 }
 
 .card-servico {
-  height: 340px;
+  height: 360px;
 }
 
 .card-title {
+  margin: 10px 0;
   text-align: center;
   color: var(--primary-color);
 }
