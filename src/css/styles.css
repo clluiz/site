@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #2F3B99;
-  --primary-color-alpha: rgba(47, 59, 153, 0.85);
+  --primary-color-alpha: rgba(47, 59, 153, 0.75);
   --primary-text: #FFE600;
   --light-gray: #C4C4C4;
   --gray: #BBBBBB;
@@ -14,12 +14,8 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.hero-image {
-  background-image: url('../images/pexels-pixabay-50711.jpg');
-}
-
 /** resets **/
-ul {
+ul,h1,h2,h3,h4,h5,h6 {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
@@ -28,8 +24,24 @@ ul {
 }
 /** end resets **/
 
+
 h1 {
   font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+
+/** estilos especifico dos componentes do site **/
+
+.hero-image {
+  background-image: url('../images/pexels-pixabay-50711.jpg');
 }
 
 .menu-container {
@@ -73,10 +85,41 @@ h1 {
   font-size: 1.5rem;
 }
 
+.secao-servicos {
+  min-height: 645px;
+}
+
+.card-servico {
+  height: 340px;
+}
+
+.card-title {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.card-servico > .card-body {
+  padding: 10px;
+}
+
+.card-body > .descricao-servico {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
 /** utilites **/
 
 .bg-primary-color {
   background-color: var(--primary-color);
+}
+
+.bg-dark-color {
+  background-color: var(--dark-gray);
+}
+
+.bg-light-gray-color {
+  background-color: var(--light-gray);
 }
 
 .font-bold {
