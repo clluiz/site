@@ -3,7 +3,8 @@
 :root {
   --primary-color: #2F3B99;
   --primary-color-alpha: rgba(47, 59, 153, 0.75);
-  --primary-text: #FFE600;
+  /* --primary-text: #FFE600; */
+  --primary-text: #F0FF56;
   --light-gray: #C4C4C4;
   --gray: #BBBBBB;
   --dark-gray: #666666;
@@ -13,6 +14,7 @@
 
 * {
   font-family: 'Roboto', sans-serif;
+  color: var(--black);
 }
 
 /** resets **/
@@ -65,13 +67,13 @@ h4 {
 }
 
 .menu-item {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   text-align: center;
 }
 
 .menu-item > a {
   color: var(--white);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .menu-item > a.active-page {
@@ -88,7 +90,7 @@ h4 {
 }
 
 .secao-servicos {
-  min-height: 645px;
+  min-height: 600px;
   padding: 20px 0;
 }
 
@@ -121,11 +123,17 @@ h4 {
 .secao-sobre {
   padding: 20px 0;
   min-height: 500px;
+  background-color: #FAF4EF;
+}
+
+.secao-sobre h2 {
+  color: #414141;
 }
 
 .secao-sobre p {
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 500;
+  color: #414141;
 
 }
 
