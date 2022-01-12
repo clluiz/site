@@ -4,7 +4,7 @@
   --primary-color: #2F3B99;
   --primary-color-alpha: rgba(47, 59, 153, 0.75);
   /* --primary-text: #FFE600; */
-  --primary-text: #F0FF56;
+  --primary-text: #C7EF00;
   --light-gray: #C4C4C4;
   --gray: #BBBBBB;
   --dark-gray: #666666;
@@ -45,7 +45,7 @@ h4 {
 
 /** estilos especifico dos componentes do site **/
 .hero-image {
-  background-image: url('../images/circuitos.webp');
+  background-image: url('../images/pexels-luis-gomes-546819.jpg');
 }
 
 .menu-container {
@@ -91,7 +91,9 @@ h4 {
 
 .secao-servicos {
   min-height: 600px;
-  padding: 20px 0;
+  padding: 60px 0 20px 0;
+  background-color: #f9fafb;
+  border-bottom: 1px solid var(--light-gray);
 }
 
 .secao-servicos > h2 {
@@ -123,7 +125,7 @@ h4 {
 .secao-sobre {
   padding: 20px 0;
   min-height: 500px;
-  background-color: #FAF4EF;
+  background-color: #f9fafb;
 }
 
 .secao-sobre h2 {
@@ -139,7 +141,8 @@ h4 {
 
 .footer {
   min-height: 500px;
-  background-color: var(--primary-color-alpha);
+  /* background-color: var(--primary-color-alpha); */
+  background-color: rgb(47 59 153 / 91%);
 }
 
 footer h4 {
