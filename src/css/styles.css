@@ -3,7 +3,6 @@
 :root {
   --primary-color: #2F3B99;
   --primary-color-alpha: rgba(47, 59, 153, 0.45);
-  /* --primary-text: #FFE600; */
   --primary-text: #C7EF00;
   --light-gray: #C4C4C4;
   --gray: #BBBBBB;
@@ -59,7 +58,7 @@ h4 {
 
 .menu-container {
   background-color: var(--primary-color);
-  height: 150px;
+  height: 130px;
   padding: 15px 0;
 }
 
@@ -259,10 +258,30 @@ footer .mapa-site a {
   font-weight: 500;
 }
 
+.font-400 {
+  font-weight: 400;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-primary {
   color: var(--primary-text);
+}
+
+.blog-post-link {
+  color: var(--primary-color);
+}
+
+.blog-post-link:hover {
+  color: var(--primary-color-alpha);
+}
+
+.post {
+  margin: 60px 0;
+}
+
+.most-recent {
+  margin: 100px 0;
 }
