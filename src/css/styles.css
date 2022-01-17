@@ -46,6 +46,10 @@ h4 {
   font-size: 1.250rem;
 }
 
+p {
+  line-height: 2.5;
+}
+
 /** estilos especifico dos componentes do site **/
 .hero-image {
   background-image: url('../images/pexels-luis-gomes-546819.jpg');
