@@ -271,7 +271,6 @@ footer .mapa-site a {
   text-align: center;
   position: absolute;
   bottom: 0;
-  background-color: var(--primary-color-dark);
 }
 
 /** utilites **/
