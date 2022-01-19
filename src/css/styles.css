@@ -4,12 +4,14 @@
   --primary-color: #0079BA;
   --primary-color-alpha: #0079bA8C;
   --primary-color-dark: #052A39;
+  --primary-color-light: #33A7DE;
   --primary-text: #C7EF00;
   --light-gray: #C4C4C4;
   --gray: #BBBBBB;
   --dark-gray: #666666;
   --white: #FFFFFF;
   --black: #000000;
+  --secondary-color: #2F3B99;
 }
 
 * {
@@ -18,7 +20,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: var(--white);
 }
 
 /** resets **/
@@ -140,13 +142,13 @@ p {
 }
 
 .secao-sobre h2 {
-  color: #414141;
+  color: var(--dark-gray);
 }
 
 .secao-sobre p {
   font-size: 1.125rem;
   font-weight: 500;
-  color: #414141;
+  color: var(--dark-gray);
 
 }
 
@@ -207,22 +209,48 @@ footer .mapa-site a {
 }
 
 .contact label {
-  color: var(--white);
+  color: var(--dark-gray);
   font-weight: bold;
 }
 
 .contact input {
-  border: none;
+  border: 1px solid var(--light-gray);
   width: 100%;
-  height: 30px;
-  border-radius: 3px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.contact input:active, input:focus {
+  outline: var(--primary-color-light);
+  border-color: var(--primary-color-light);
+}
+
+.contact textarea:focus, textarea:active {
+  border-color: var(--primary-color-light);
+  outline: var(--primary-color-light);
 }
 
 .contact textarea {
   height: 200px;
   width: 100%;
-  border: none;
-  border-radius: 3px;
+  border-radius: 5px;
+  resize: none;
+  border: 1px solid var(--light-gray);
+}
+
+.contact select {
+  padding: 0 5px;
+  height: 50px;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--white);
+  border: 1px solid var(--light-gray);
+}
+
+.contact select:focus, select:active {
+  border-color: var(--primary-color-light);
+  outline: var(--primary-color-light);
 }
 
 .contact button {
@@ -231,7 +259,7 @@ footer .mapa-site a {
   width: 100%;
   color: var(--white);
   font-weight: bold;
-  background-color: #003e50;
+  background-color: var(--secondary-color);
   border: none;
 }
 
