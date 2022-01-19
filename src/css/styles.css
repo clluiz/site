@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-  --primary-color: #2F3B99;
-  --primary-color-alpha: rgba(47, 59, 153, 0.45);
+  --primary-color: #0079ba;
+  --primary-color-alpha: #0079ba8c;
   --primary-text: #C7EF00;
   --light-gray: #C4C4C4;
   --gray: #BBBBBB;
@@ -47,12 +47,13 @@ h4 {
 }
 
 p {
-  line-height: 2.5;
+  line-height: 2.0;
 }
 
 /** estilos especifico dos componentes do site **/
 .hero-image {
-  background-image: url('../images/pexels-luis-gomes-546819.jpg');
+  background-image: url('../images/a3cdf3560eaa1dbe366834f7ed0efed5.jpg');
+  background-size: cover;
 }
 
 .hero-image > .menu-container {
@@ -85,7 +86,7 @@ p {
 
 .menu-item > a {
   color: var(--white);
-  font-weight: 700;
+  font-weight:800;
 }
 
 .menu-item > a.active-page {
@@ -93,7 +94,7 @@ p {
 }
 
 .header-container {
-  height: 550px;
+  height: 350px;
   background-color: var(--primary-color-alpha);
 }
 
