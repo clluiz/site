@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-  --primary-color: #0079ba;
-  --primary-color-alpha: #0079ba8c;
+  --primary-color: #0079BA;
+  --primary-color-alpha: #0079bA8C;
+  --primary-color-dark: #052A39;
   --primary-text: #C7EF00;
   --light-gray: #C4C4C4;
   --gray: #BBBBBB;
@@ -150,7 +151,7 @@ p {
 }
 
 .footer {
-  min-height: 500px;
+  min-height: 350px;
   background-color: var(--primary-color);
   position: relative;
 }
@@ -242,6 +243,7 @@ footer .mapa-site a {
   text-align: center;
   position: absolute;
   bottom: 0;
+  background-color: var(--primary-color-dark);
 }
 
 /** utilites **/
