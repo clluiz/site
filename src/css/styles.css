@@ -33,6 +33,10 @@ ul,h1,h2,h3,h4,h5,h6 {
 }
 /** end resets **/
 
+.logo {
+  vertical-align: bottom;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -66,7 +70,7 @@ p {
 
 .menu-container {
   background-color: var(--primary-color);
-  height: 130px;
+  height: 65px;
   padding: 15px 0;
 }
 
@@ -77,9 +81,6 @@ p {
 .menu {
   list-style-type: none;
   position: absolute;
-  height: 80px;
-  top:50%;
-  margin-top: 40px;
 }
 
 .menu-item {
@@ -197,7 +198,7 @@ footer .mapa-site > li::before {
 }
 
 footer .mapa-site li {
-  height: 70px;
+  height: 50px;
 }
 
 footer .mapa-site a {
