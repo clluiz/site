@@ -1,8 +1,23 @@
 {
-  "scripts":  {
-    "start": "http-server ./src -p 1234"
+  "scripts": {
+    "start": "http-server ./src -p 1234",
   },
   "dependencies": {
     "http-server": "^14.1.0"
-  }
+  },
+  "devDependencies": {},
+  "name": "cleitonluizdev.com.br",
+  "version": "1.0.0",
+  "description": "Site profissional e blog",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clluiz/site.git"
+  },
+  "author": "Cleiton Luiz <cleitonluiz.dev@gmail.com> (https://www.cleitonluizdev.com.br)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clluiz/site/issues"
+  },
+  "homepage": "https://github.com/clluiz/site#readme"
 }
