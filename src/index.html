@@ -15,7 +15,7 @@
   <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
+<body onload="loaded()">
 
   <div class="hero-image">
     <div class="menu-container">
@@ -30,9 +30,9 @@
           <div class="col-10">
             <nav class="container main-navigation">
               <ul class="row menu">
-                <li class="col-4 menu-item"><a href="#servicos">Serviços</a></li>
-                <li class="col-4 menu-item"><a href="blog.html">Blog</a></li>
-                <li class="col-4 menu-item"><a href="#portfolio">Portfólio</a></li>
+                <li class="col-4 menu-item"><a class="menu-link" href="#servicos">Serviços</a></li>
+                <li class="col-4 menu-item"><a class="menu-link" href="blog.html">Blog</a></li>
+                <li class="col-4 menu-item"><a class="menu-link" href="#portfolio">Portfólio</a></li>
               </ul>
             </nav>
           </div>
@@ -182,28 +182,49 @@
             </li>
           </ul>
         </div>
-        <!-- <div class="col-4">
-          <h4>Contato</h4>
-          <form class="contact">
-            <div>
-              <label for="nome">Nome</label>
-              <input id="nome" name="nome" type="text">
-            </div>
-            <div>
-              <label for="email">E-mail</label>
-              <input id="email" name="email" type="text">
-            </div>
-            <div>
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem"></textarea>
-            </div>
-            <button>Enviar mensagem</button>
-          </form>
-        </div> -->
       </div>
     </div>
     <small class="copyright">Copyright © 2022 Cleiton Luiz Rocha Teodoro</small>
   </footer>
+
+  <script>
+
+   function loaded() {
+      var hash = window.location.hash;
+      if(hash) {
+        document.querySelectorAll('.menu-link').forEach(element => {
+          if(element.getAttribute('href') === hash) {
+            element.classList.add('active-page');    
+          } else {
+            element.classList.remove('active-page');
+          }
+        })
+      } else {
+        document.querySelectorAll('.menu-link').forEach(element => {
+          element.classList.remove('active-page');
+        });
+      }
+    }
+
+    window.onhashchange = function(event) {
+      var hash = event.path[0].location.hash;
+      if(hash) {
+        document.querySelectorAll('.menu-link').forEach(element => {
+          if(element.getAttribute('href') === hash) {
+            element.classList.add('active-page');    
+          } else {
+            element.classList.remove('active-page');
+          }
+        })
+      } else {
+        document.querySelectorAll('.menu-link').forEach(element => {
+          element.classList.remove('active-page');
+        });
+      }
+    }
+    
+  </script>
+
 </body>
 
 </html>
