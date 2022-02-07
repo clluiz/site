@@ -156,6 +156,15 @@ p {
 .secao-portfolio {
   padding: 20px 0;
   min-height: 500px;
+  background-color: #EFEFEF59;
+}
+
+.secao-portfolio h2 {
+  color: var(--dark-gray);
+}
+
+.form-item {
+  margin: 15px 0;
 }
 
 .footer {
