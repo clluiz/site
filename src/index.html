@@ -93,14 +93,37 @@
     </div>
   </section>
 
-  <section id="portfolio" class="secao-sobre">
+  <section id="portfolio" class="secao-portfolio">
     <h2 class="text-center">Portfólio</h2>
+    <br />
+    <h3 class="text-center">Empresas para as quais já prestei serviços</h3>
+    <br />
     <div class="container" style="height: 100%">
       <div class="row">
-        <div class="col-12">
-
+        <div class="col-4">
+          <a class="partner" href="https://www.cashu.com.br" target="_blank" rel="noopener" alt="Logo da fintech Cashu">
+            <img src="images/cashu.webp" width="102" />
+          </a>
+        </div>
+        <div class="col-4 kenoby">
+          <a class="partner" href="https://www.kenoby.com/" target="_blank" rel="noopener" alt="Logo da empresa de recrutamento e seleção Kenoby">
+            <img src="images/kenoby.svg" width="114" height="40" />
+          </a>
+        </div>
+        <div class="col-4 houer">
+          <a class="partner" href="https://www.houer.com.br" target="_blank" rel="noopener" alt="Logo da empresa de engenharia Houer">
+            <img src="images/houer.png" width="180" height="65" />
+          </a>
         </div>
       </div>
+      <div class="row">
+        <div class="col-4">
+          <a class="partner" href="https://youxgroup.com.br" target="_blank" rel="noopener" alt="Logo do grupo Youx">
+            <img src="images/youx.png" width="180" />
+          </a>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -162,7 +185,6 @@
                 Twitter
               </a>
             </li>
-            <!-- <li><a href="">Instagram</a></li> -->
           </ul>
         </div>
         <div class="col-6">
@@ -189,12 +211,11 @@
 
   <script>
 
-   function loaded() {
-      var hash = window.location.hash;
-      if(hash) {
+    function selecionarLink(hash) {
+      if (hash) {
         document.querySelectorAll('.menu-link').forEach(element => {
-          if(element.getAttribute('href') === hash) {
-            element.classList.add('active-page');    
+          if (element.getAttribute('href') === hash) {
+            element.classList.add('active-page');
           } else {
             element.classList.remove('active-page');
           }
@@ -206,23 +227,16 @@
       }
     }
 
-    window.onhashchange = function(event) {
-      var hash = event.path[0].location.hash;
-      if(hash) {
-        document.querySelectorAll('.menu-link').forEach(element => {
-          if(element.getAttribute('href') === hash) {
-            element.classList.add('active-page');    
-          } else {
-            element.classList.remove('active-page');
-          }
-        })
-      } else {
-        document.querySelectorAll('.menu-link').forEach(element => {
-          element.classList.remove('active-page');
-        });
-      }
+    function loaded() {
+      var hash = window.location.hash;
+      selecionarLink(hash);
     }
-    
+
+    window.onhashchange = function (event) {
+      var hash = event.path[0].location.hash;
+      selecionarLink(hash);
+    }
+
   </script>
 
 </body>

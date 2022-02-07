@@ -12,6 +12,7 @@
   --white: #FFFFFF;
   --black: #000000;
   --secondary-color: #2F3B99;
+  --kenoby-color: #011E60;
 }
 
 * {
@@ -150,7 +151,11 @@ p {
   font-size: 1.125rem;
   font-weight: 500;
   color: var(--dark-gray);
+}
 
+.secao-portfolio {
+  padding: 20px 0;
+  min-height: 500px;
 }
 
 .footer {
@@ -312,6 +317,14 @@ footer .mapa-site a {
   color: var(--primary-text);
 }
 
+.kenoby {
+  background-color: var(--kenoby-color);
+}
+
+.houer {
+  background-color: var(--black);
+}
+
 .blog-post-link {
   color: var(--primary-color);
 }
@@ -326,4 +339,11 @@ footer .mapa-site a {
 
 .most-recent {
   margin: 100px 0;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 105px;
 }
