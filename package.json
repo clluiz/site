@@ -1,11 +1,14 @@
 {
   "scripts": {
-    "start": "http-server ./src -p 1234"
+    "serve": "eleventy --input=./src --serve --formats=html,webp,svg,css,png,jpg",
+    "build": "eleventy --input=./src --output=_site --formats=html,webp,svg,css,png,jpg"
   },
   "dependencies": {
     "http-server": "^14.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  },
   "name": "cleitonluizdev.com.br",
   "version": "1.0.0",
   "description": "Site profissional e blog",
