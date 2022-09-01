@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{{ '/css/styles.css' | url }}" />
 </head>
 
-<body onload="loaded()">
+<body onload="configureMenu()">
 
   <div class="hero-image">
     <div class="menu-container">
@@ -23,7 +23,7 @@
         <div class="row">
           <div class="col-2">
             <a href="index.html">
-              <img class="logo" src="images/cleitonluizdev.svg" width="100%" height="100%"
+              <img class="logo" src="{{'/images/cleitonluizdev.svg' | url}}" width="100%" height="100%"
                 alt="Logo do site contendo uma letra C e uma letra L" />
             </a>
           </div>
@@ -70,7 +70,7 @@
         </div>
 
         <div class="col-4 card-servico text-center">
-          <img src="images/shopping.png" width="100" height="100"
+          <img src="{{ '/images/shopping.png' | url }}" width="100" height="100"
             alt="Ilustração representando um caminhão dando a volta no mundo para ilustrar o e-commerce" />
           <h3 class="card-title">E-commerce</h3>
           <div class="card-body">
@@ -80,7 +80,7 @@
         </div>
 
         <div class="col-4 card-servico text-center">
-          <img src="images/web-development.png" width="100" height="100"
+          <img src="{{ '/images/web-development.png' | url }}" width="100" height="100"
             alt="Uma imagem com gráfico para exemplificar um aplicativo" />
           <h3 class="card-title">Aplicativos</h3>
           <div class="card-body">
@@ -102,24 +102,24 @@
       <div class="row">
         <div class="col-4">
           <a class="partner" href="https://www.cashu.com.br" target="_blank" rel="noopener" alt="Logo da fintech Cashu">
-            <img src="images/cashu.webp" width="102" />
+            <img src="{{ '/images/cashu.webp' | url }}" width="102" />
           </a>
         </div>
         <div class="col-4 kenoby">
           <a class="partner" href="https://www.kenoby.com/" target="_blank" rel="noopener" alt="Logo da empresa de recrutamento e seleção Kenoby">
-            <img src="images/kenoby.svg" width="114" height="40" />
+            <img src="{{ '/images/kenoby.svg' | url }}" width="114" height="40" />
           </a>
         </div>
         <div class="col-4 houer">
           <a class="partner" href="https://www.houer.com.br" target="_blank" rel="noopener" alt="Logo da empresa de engenharia Houer">
-            <img src="images/houer.png" width="180" height="65" />
+            <img src="{{ '/images/houer.png' | url }}" width="180" height="65" />
           </a>
         </div>
       </div>
       <div class="row">
         <div class="col-4">
           <a class="partner" href="https://youxgroup.com.br" target="_blank" rel="noopener" alt="Logo do grupo Youx">
-            <img src="images/youx.png" width="180" />
+            <img src="{{ '/images/youx.png' | url }}" width="180" />
           </a>
         </div>
       </div>
@@ -169,19 +169,19 @@
           <ul class="social">
             <li>
               <a href="https://www.linkedin.com/in/cleiton-luiz-nodejs-javascript/" target="_blank" rel="noopener">
-                <img src="images/linkedin.svg" alt="Logo do linkedin" width="30px" height="30px" />
+                <img src="{{ '/images/linkedin.svg' | url }}" alt="Logo do linkedin" width="30px" height="30px" />
                 Linkedin
               </a>
             </li>
             <li>
               <a href="https://github.com/clluiz" target="_blank" rel="noopener">
-                <img src="images/github.svg" alt="Logo do github mostrando o octocat" width="30px" height="30px" />
+                <img src="{{ '/images/github.svg' | url }}" alt="Logo do github mostrando o octocat" width="30px" height="30px" />
                 Github
               </a>
             </li>
             <li>
               <a href="https://twitter.com/cleiton_dev" target="_blanck" rel="noopener">
-                <img src="images/twitter.svg" alt="Logo do github mostrando o octocat" width="30px" height="30px" />
+                <img src="{{ '/images/twitter.svg' | url }}" alt="Logo do github mostrando o octocat" width="30px" height="30px" />
                 Twitter
               </a>
             </li>
@@ -211,7 +211,7 @@
 
   <script>
 
-    function selecionarLink(hash) {
+    function selectLink(hash) {
       if (hash) {
         document.querySelectorAll('.menu-link').forEach(element => {
           if (element.getAttribute('href') === hash) {
@@ -227,14 +227,14 @@
       }
     }
 
-    function loaded() {
+    function configureMenu() {
       var hash = window.location.hash;
-      selecionarLink(hash);
+      selectLink(hash);
     }
 
     window.onhashchange = function (event) {
       var hash = event.path[0].location.hash;
-      selecionarLink(hash);
+      selectLink(hash);
     }
 
   </script>
