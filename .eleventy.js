@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("/css/");
-  eleventyConfig.addWatchTarget("/css/");
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addWatchTarget("src/css");
   return {
     markdownTemplateEngine: "njk",
     templateFormats: ["html", "njk", "md"],
