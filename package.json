@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "serve": "eleventy --input=./src --serve --formats=html,webp,svg,css,png,jpg",
-    "build": "eleventy --input=./src --output=_site --formats=html,webp,svg,css,png,jpg"
+    "serve": "eleventy --serve",
+    "build": "eleventy"
   },
   "dependencies": {
     "http-server": "^14.1.0"
