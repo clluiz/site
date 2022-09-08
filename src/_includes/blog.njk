@@ -13,7 +13,7 @@
     content={{ keywords }}>
   <link rel="stylesheet" href="{{ '/css/simple-grid.min.css' | url }}" />
   <link rel="stylesheet" href="{{ '/css/styles.css' | url }}" />
-  <link rel="stylesheet" href="{{ '/css/blah.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/css/blog.css' | url }}" />
 </head>
 
 <body>
@@ -32,7 +32,7 @@
             <ul class="row menu">
               <li class="col-3 menu-item"><a href="/index.html">Home</a></li>
               <li class="col-3 menu-item"><a href="/index.html#servicos">Serviços</a></li>
-              <li class="col-3 menu-item"><a class="active-page" href="#">Blog</a></li>
+              <li class="col-3 menu-item"><a class="active-page" href="/blog.html">Blog</a></li>
               <li class="col-3 menu-item"><a href="/index.html#portfolio">Portfólio</a></li>
             </ul>
           </nav>
@@ -41,7 +41,7 @@
     </div>
   </div>    
 
-  <main>
+  <main class="container blog">
     {{ content | safe }}
   </main>
 

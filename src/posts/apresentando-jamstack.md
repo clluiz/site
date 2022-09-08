@@ -6,9 +6,9 @@ description: Introdução a uma nova forma de criar sites e aplicações web de 
 title: Apresentando o JAMStack e seus impactos para os negócios
 ---
 
-## Apresentando o JAMStack e seus impactos para os negócios
+# Apresentando o JAMStack e seus impactos para os negócios
 
-### Introdução
+## Introdução
 
 Neste artigo irei abordar uma arquitetura que está sendo utilizada para desenvolver sites, aplicações web, lojas virtuais e blogs aliando redução de custos e complexidade a maiores segurança e escalabilidade. 
 Ao ter contato com uma nova tecnologia é importante saber por que ela foi criada. A seguinte pergunta deve ser respondida: qual problema essa tecnologia resolve e como ela resolve? 
@@ -19,7 +19,7 @@ Com o passar do tempo e a evolução das tecnologias as formas de se acessar e i
 
 Hoje, a complexidade para criação de sites, e-commerce, blog e outros tipos de plataformas é muito grande porque os desenvolvedores devem cuidar de t um fluxo muito complexo que abrange o codificação, os testes em dispositivos com vários tamanhos de tela, várias velocidades de conexão à internet, até a configuração de servidores (*on-premise* ou na nuvem), provisionamento de bancos de dados, considerações sobre segurança da informação. Todo esse processo além de complexo não é barato e tem vários desafios de escalabilidade e também na forma de oferecer uma excelente experiência para o usuário.
 
-### O que é JAMStack
+## O que é JAMStack
 
 Mas o que significa JAMStack? Esse termo foi criado por Mathias Biilmann e significa Javascript, API's e Markup. 
 
@@ -29,7 +29,7 @@ JAMStack não é um novo *framework*. É apenas um conjunto de boas práticas qu
 * API's - toda a lógica da aplicação deve ser feita utilizando-se de chamada para várias API's separadas, isso vai de encontro à evolução das arquitetura baseada em microsserviços.
 * Markup - o HTML é construído durante o deploy da aplicação.
 
-### Características de uma aplicação feita usando JAMStack
+## Características de uma aplicação feita usando JAMStack
 
 Um site estático e desenvolvido usando apenas html, css e talvez um pouco de javascript. Todos esses arquivos são colocado em um servidor e qualquer alteração do conteúdo é feita diretamente nesse arquivos. 
 
@@ -39,7 +39,7 @@ Já uma aplicação feita usando JAMStack se situa entre um site estático e uma
 
 ![Diferença entra a arquitetura tradicional e markdown](https://dinarys.com/photos/7/jam-dinarys.png)
 
-### Vantagens de se utilizar JAMStack
+## Vantagens de se utilizar JAMStack
 
 * Maior segurança: ao construir sua lógica usando API's de qualidade a equipe de desenvolvimento fica livre da carga de identificar e resolver todas as possíveis vulnerabilidades já que esse trabalho ficará a cargo dos mantenedores da API;
 * Desempenho: por ter seu conteúdo hospedado em CDN's a velocidade de acesso é reduzida e a disponibilidade aumenta. Além disso devido a boa parte da aplicação ser renderizada durante o deploy a forma de acesso á praticamente igual à de um site estático;
@@ -50,20 +50,20 @@ Tudo isso causa um impacto positivo nos negócios já que um [site mais rápido 
 
 Com uma estrutura de código mais simples, as alterações e correções de problemas se tornam mais rápidas e ágeis.
 
-### Conclusão
+## Conclusão
 
 Quando eu tomei conhecimento sobre JAMStack eu achei que se tratava apenas de mais uma *buzzword* tão comum em nossa indústria e que sites feitos utilizando essa metodologia eram apenas sites estáticos "gourmetizados". Mas ao estudar mais e me inteirar sobre o assunto percebi que se trata de algo que realmente irá mudar radicalmente a forma como novas aplicações web serão desenvolvidas. Além disso JAMStack se alinha muito bem às mudanças que surgiram com o advento das arquiteturas de microsserviços.
 
-### Leituras recomendadas
+## Leituras recomendadas
 
 Nesse artigo eu apenas introduzi o JAMStack. Caso você tenha se interessado, segue uma pequena lista com leituras recomendadas com mais detalhes, vantagens e também desvantagens do uso do JAMStack.
 
-* https://www.netlify.com/jamstack/
-* https://bejamas.io/blog/jamstack/
-* https://hackernoon.com/forget-docker-the-future-is-jamstack-aae5bcaf4616
-* https://snipcart.com/blog/jamstack
+* [https://www.netlify.com/jamstack/](https://www.netlify.com/jamstack/)
+* [https://bejamas.io/blog/jamstack/](https://bejamas.io/blog/jamstack/)
+* [https://hackernoon.com/forget-docker-the-future-is-jamstack-aae5bcaf4616](https://hackernoon.com/forget-docker-the-future-is-jamstack-aae5bcaf4616)
+* [https://snipcart.com/blog/jamstack](https://snipcart.com/blog/jamstack)
 
-### Referências
+## Referências
 
 A imagem que ilustra a diferença entre as arquiteuras tradicionas e o JAMStack foi extraída [daqui](https://snipcart.com/blog/jamstack)
 

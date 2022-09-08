@@ -14,3 +14,7 @@ main {
 footer {
   flex-shrink: 0;
 }
+
+.blog p {
+  font-weight: 400;
+}
