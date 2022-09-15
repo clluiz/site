@@ -1,13 +1,17 @@
 {
   "scripts": {
-    "serve": "eleventy --serve",
-    "build": "eleventy"
+    "serve": "eleventy --serve & npx tailwindcss -i src/css/main.css -o public/css/main.css --watch",
+    "build:old": "eleventy",
+    "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i src/css/main.css -o public/css/main.css --minify"
   },
   "dependencies": {
     "http-server": "^14.1.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "autoprefixer": "^10.4.11",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
   },
   "name": "cleitonluizdev.com.br",
   "version": "1.0.0",
