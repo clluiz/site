@@ -11,81 +11,67 @@
     content="Página criada para divulgar meu trabalho com tecnologia e compartilhar meus pensamentos sobre desenvolvimento de software">
   <meta name="keywords"
     content="programação, sites, web, desenvolvimento, aplicações, e-commerce, criação de sites, lojas virtuais, desenvolvimento de software">
-  <link rel="stylesheet" href="{{ '/css/simple-grid.min.css' | url }}" />
   <link rel="stylesheet" href="{{ '/css/styles.css' | url }}" />
   <link rel="stylesheet" href="{{ '/css/main.css' | url }}" />
 </head>
 
-<body onload="configureMenu()">
+<body>
 
-  <div class="hero-image">
-    <div class="menu-container">
-      <div class="container">
-        <div class="row">
-          <div class="col-2">
-            <a href="index.html">
-              <img class="logo" src="{{'/images/cleitonluizdev.svg' | url}}" width="100%" height="100%"
-                alt="Logo do site contendo uma letra C e uma letra L" />
-            </a>
-          </div>
-          <div class="col-10">
-            <nav class="container main-navigation">
-              <ul class="row menu">
-                <li class="col-4 menu-item"><a class="menu-link" href="#servicos">Serviços</a></li>
-                <li class="col-4 menu-item"><a class="menu-link" href="blog.html">Blog</a></li>
-                <li class="col-4 menu-item"><a class="menu-link" href="#portfolio">Portfólio</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+  <header class="h-96 hero-image">
+    <div style="background-color: #0079bA8C; height: 100%;">
+      <div class="container text-center mx-auto">
+        <nav class="flex h-36 items-center justify-evenly">
+          <a href="index.html">
+            <img src="{{ '/images/cleitonluizdev.svg' }}" width="120" height="100%" />
+          </a>
+          <ul class="flex justify-center gap-48">
+            <li class=""><a class="text-white font-semibold underline" href="#servicos">Serviços</a></li>
+            <li class=""><a class="text-white font-semibold underline" href="blog.html">Blog</a></li>
+            <li class=""><a class="text-white font-semibold underline" href="#portfolio">Portfólio</a></li>
+          </ul>
+        </nav>
+
+        <h1 class="text-primary-text text-5xl font-bold mb-10">Transformação digital para sua empresa</h1>
+        <p class="text-primary-text text-2xl font-medium">Crio sites, <i>e-commerces</i>
+          e
+          aplicativos web e mobile sob demanda para sua empresa</p>
       </div>
     </div>
+  </header>
 
-    <div class="header-container">
-      <div class="container">
-        <div class="row">
-          <header class="col-12">
-            <h1 class="text-primary text-center font-bold">Transformação digital para sua empresa</h1>
-            <p class="text-primary text-center font-medium">Eu desenvolvo sites, <i class="text-primary">e-commerces</i>
-              e
-              aplicativos rápidos, seguros e acessíveis para MEI’s, micro e pequenas empresas</p>
-          </header>
-        </div>
-      </div>
-    </div>
-  </div>
+  <section id="servicos" class="mt-8" style="min-height: 500px">
 
-  <section id="servicos" class="secao-servicos">
-    <h2 class="text-center">Serviços</h2>
-    <div class="container" style="height: 100%">
-      <div class="row">
-        <div class="col-4 card-servico text-center">
+    <h2 class="text-3xl font-semibold text-center">Serviços</h2>
+
+    <div class="container mx-auto my-28" style="height: 100%">
+
+      <div class="columns-3">
+
+        <div class="w-full flex flex-col items-center gap-y-4">
           <img src="{{ '/images/responsive.png' | url }}" width="100" height="100"
             alt="Uma imagem exibindo um site estilizado para ilustrar o serviço de desenvolvimento de sites" />
-          <h3 class="card-title">Sites</h3>
-          <div class="card-body">
-            <p class="descricao-servico">Sites com designs modernos, responsivos, otimizados para performance, SEO e que
-              convertem
-              visitantes em clientes</p>
+          <h3 class="font-semibold">Sites</h3>
+          <div>
+            <p>Sites que convertem visitantes em clientes</p>
           </div>
         </div>
 
-        <div class="col-4 card-servico text-center">
+        <div class="w-full flex flex-col items-center gap-y-4">
           <img src="{{ '/images/shopping.png' | url }}" width="100" height="100"
             alt="Ilustração representando um caminhão dando a volta no mundo para ilustrar o e-commerce" />
-          <h3 class="card-title">E-commerce</h3>
-          <div class="card-body">
-            <p class="descricao-servico">Integração de plataformas de e-commerce, meios de pagamento, templates
+          <h3 class="font-semibold">E-commerce</h3>
+          <div>
+            <p>Integração de plataformas de e-commerce, meios de pagamento, templates
               customizados e mais</p>
           </div>
         </div>
 
-        <div class="col-4 card-servico text-center">
+        <div class="w-full flex flex-col items-center gap-y-4">
           <img src="{{ '/images/web-development.png' | url }}" width="100" height="100"
             alt="Uma imagem com gráfico para exemplificar um aplicativo" />
-          <h3 class="card-title">Aplicativos</h3>
-          <div class="card-body">
-            <p class="descricao-servico">Software sob demanda - aplicativos para web e dispositivos móveis - de acordo
+          <h3 class="font-semibold">Aplicativos</h3>
+          <div>
+            <p>Software sob demanda - aplicativos para web e dispositivos móveis - de acordo
               com as necessidades da sua empresa</p>
           </div>
         </div>
@@ -94,103 +80,98 @@
     </div>
   </section>
 
-  <section id="portfolio" class="secao-portfolio">
-    <h2 class="text-center">Portfólio</h2>
-    <br />
-    <h3 class="text-center">Empresas para as quais já prestei serviços</h3>
-    <br />
-    <div class="container" style="height: 100%">
-      <div class="row">
-        <div class="col-4">
-          <a class="partner" href="https://www.cashu.com.br" target="_blank" rel="noopener" alt="Logo da fintech Cashu">
+  <section id="portfolio" class="py-8 flex flex-col justify-center" style="background-color: #EFEFEF59; min-height: 300px;">
+
+    <h2 class="text-3xl font-semibold text-center">Porfolio</h2>
+
+    <p class="text-center">Empresas para as quais já prestei serviços</p>
+
+    <div class="container mx-auto my-12" style="height: 100%">
+
+      <div class="flex flex-wrap gap-x-16 justify-center">
+
+        <div class="w-1/8 p-2 flex items-center">
+          <a href="https://www.cashu.com.br" target="_blank" rel="noopener" alt="Logo da fintech Cashu">
             <img src="{{ '/images/cashu.webp' | url }}" width="102" />
           </a>
         </div>
-        <div class="col-4 kenoby">
-          <a class="partner" href="https://www.kenoby.com/" target="_blank" rel="noopener" alt="Logo da empresa de recrutamento e seleção Kenoby">
+
+        <div class="w-1/8 p-2 flex items-center bg-kenoby-color kenoby">
+          <a href="https://www.kenoby.com/" target="_blank" rel="noopener"
+            alt="Logo da empresa de recrutamento e seleção Kenoby">
             <img src="{{ '/images/kenoby.svg' | url }}" width="114" height="40" />
           </a>
         </div>
-        <div class="col-4 houer">
-          <a class="partner" href="https://www.houer.com.br" target="_blank" rel="noopener" alt="Logo da empresa de engenharia Houer">
+
+        <div class="w-1/8 p-2 flex items-center bg-black houer">
+          <a href="https://www.houer.com.br" target="_blank" rel="noopener" alt="Logo da empresa de engenharia Houer">
             <img src="{{ '/images/houer.png' | url }}" width="180" height="65" />
           </a>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-4">
-          <a class="partner" href="https://youxgroup.com.br" target="_blank" rel="noopener" alt="Logo do grupo Youx">
+
+        <div class="w-1/8 p-2 flex items-center">
+          <a href="https://youxgroup.com.br" target="_blank" rel="noopener" alt="Logo do grupo Youx">
             <img src="{{ '/images/youx.png' | url }}" width="180" />
           </a>
         </div>
+
       </div>
+
     </div>
-    </div>
+
   </section>
 
-  <section id="portfolio" class="secao-sobre">
-    <h2 class="text-center">Contato</h2>
-    <div class="container" style="height: 100%">
-      <div class="row">
-        <div class="col-12">
-          <form class="contact">
-            <div class="form-item">
-              <label for="nome">Nome</label>
-              <input id="nome" name="nome" type="text">
-            </div>
-            <div class="form-item">
-              <label for="email">E-mail</label>
-              <input id="email" name="email" type="text">
-            </div>
-            <div class="form-item">
-              <label for="">Tipo de serviço</label>
-              <select>
-                <option></option>
-                <option value="1">Desenvolvimento de sites</option>
-                <option value="2">E-commerce</option>
-                <option value="3">Desenvolvimento de aplicações</option>
-              </select>
-            </div>
-            <div class="form-item">
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem"></textarea>
-            </div>
-            <button>Enviar mensagem</button>
-          </form>
-        </div>
-      </div>
+  <section id="contato" class="container mx-auto text-center h-96 py-8">
+
+    <h2 class="text-3xl font-semibold">Contato</h2>
+
+    <a href="https://calendly.com/cleiton-dev/30min" target="_blank" rel="noopener" class="w-96 mt-8 p-8 rounded-2xl mx-auto h-24 block hover:bg-red-400 bg-red-700 font-bold text-rose-100">
+      Agende uma conversa sem compromisso!
+    </a>
+
     </div>
+
   </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <h4>Redes sociais</h4>
-          <ul class="social">
+  <footer class="footer bg-primary-color h-72 py-4">
+
+    <div class="container mx-auto h-full">
+
+      <div class="columns-2 h-full">
+
+        <div class="w-full flex flex-col items-center text-white h-full">
+          
+          <h4 class="font-bold text-2xl mb-2">Redes sociais</h4>
+          
+          <ul class="w-full flex flex-col items-center gap-y-5">
             <li>
-              <a href="https://www.linkedin.com/in/cleiton-luiz-nodejs-javascript/" target="_blank" rel="noopener">
+              <a class="flex items-center gap-x-5" href="https://www.linkedin.com/in/cleiton-luiz-nodejs-javascript/" target="_blank" rel="noopener">
                 <img src="{{ '/images/linkedin.svg' | url }}" alt="Logo do linkedin" width="30px" height="30px" />
                 Linkedin
               </a>
             </li>
             <li>
-              <a href="https://github.com/clluiz" target="_blank" rel="noopener">
-                <img src="{{ '/images/github.svg' | url }}" alt="Logo do github mostrando o octocat" width="30px" height="30px" />
+              <a class="flex items-center gap-x-5" href="https://github.com/clluiz" target="_blank" rel="noopener">
+                <img src="{{ '/images/github.svg' | url }}" alt="Logo do github mostrando o octocat" width="30px"
+                  height="30px" />
                 Github
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/cleiton_dev" target="_blanck" rel="noopener">
-                <img src="{{ '/images/twitter.svg' | url }}" alt="Logo do github mostrando o octocat" width="30px" height="30px" />
+              <a class="flex items-center gap-x-5" href="https://twitter.com/cleiton_dev" target="_blanck" rel="noopener">
+                <img src="{{ '/images/twitter.svg' | url }}" alt="Logo do github mostrando o octocat" width="30px"
+                  height="30px" />
                 Twitter
               </a>
             </li>
           </ul>
         </div>
-        <div class="col-6">
-          <h4>Mapa do site</h4>
-          <ul class="mapa-site">
+
+        <div class="w-full flex flex-col items-center text-white h-full">
+          
+          <h4 class="font-bold text-2xl mb-2">Mapa do site</h4>
+          
+          <ul class="w-full flex flex-col items-center gap-y-5">
             <li>
               <a href="#">Home</a>
             </li>
@@ -205,12 +186,16 @@
             </li>
           </ul>
         </div>
+      
       </div>
+
     </div>
-    <small class="copyright">Copyright © 2022 Cleiton Luiz Rocha Teodoro</small>
+    
+    <small class="absolute text-white font-medium text-center w-full inline-block bg-primary-color">Copyright © 2022 Cleiton Luiz Rocha Teodoro</small>
+
   </footer>
 
-  <script>
+  <!-- <script>
 
     function selectLink(hash) {
       if (hash) {
@@ -238,7 +223,7 @@
       selectLink(hash);
     }
 
-  </script>
+  </script> -->
 
 </body>
 
