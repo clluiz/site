@@ -19,6 +19,9 @@ module.exports = {
         black: '#000000',
         "kenoby-color": '#011E60',
         "youx-color": '#B9114B',
+      },
+      height: {
+        '128': '32rem'
       }
     },
   },

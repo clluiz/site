@@ -1,9 +1,9 @@
-<ul>
+<ul class="container">
   {% for post in postslist %}
-    <li class="row post">
-      <span>{{ post.data.date }}</span>
-      <h3><a class="font-400 blog-post-link" href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-      <span>{{post.data.description}}</span>
+    <li class="column-1 my-10">
+      <span class="font-700 text-lg">{{ post.data.date }}</span>
+      <h2 class="text-primary-color text-3xl "><a class="underline decoration-primary-color font-bold" href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+      <span class="text-lg">{{post.data.description}}</span>
     </li>
   {% endfor %}
 <ul>
