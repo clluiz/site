@@ -1,8 +1,8 @@
 <ul class="container">
   {% for post in postslist %}
-    <li class="column-1 my-10">
-      <span class="font-700 text-lg">{{ post.data.date }}</span>
-      <h2 class="text-primary-color text-3xl "><a class="underline decoration-primary-color font-bold" href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+    <li class="column-1 my-5">
+      <span class="font-semibold text-lg">{{ post.data.date }}</span>
+      <h2 class="text-primary-color text-3xl my-2"><a class="underline decoration-primary-color font-bold" href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
       <span class="text-lg">{{post.data.description}}</span>
     </li>
   {% endfor %}

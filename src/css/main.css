@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .post h1 {
+    @apply text-4xl my-10 font-bold;
+  }
+
+  .post h2 {
+    @apply text-2xl my-10 font-semibold;
+  }
+
+  .post a {
+    @apply underline;
+  }
+}

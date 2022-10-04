@@ -1,5 +1,5 @@
 ---
-layout: blog.njk
+layout: post.njk
 permalink: /blog/introducao-ao-jam-stack.html
 date: 2021-01-01
 description: Introdução a uma nova forma de criar sites e aplicações web de maneira mais rápida, segura e fácil

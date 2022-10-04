@@ -1,27 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* :root {
-  --primary-color: #0079BA;
-  --primary-color-alpha: #0079bA8C;
-  --primary-color-dark: #052A39;
-  --primary-color-light: #33A7DE;
-  --primary-text: #C7EF00;
-  --light-gray: #C4C4C4;
-  --gray: #BBBBBB;
-  --dark-gray: #666666;
-  --white: #FFFFFF;
-  --black: #000000;
-  --secondary-color: #2F3B99;
-  --kenoby-color: #011E60;
-} */
-
 * {
   font-family: 'Roboto', sans-serif;
   color: var(--black);
 }
 
 body {
-  background-color: var(--white);
+  /* background-color: var(--white); */
 }
 
 /** resets **/
@@ -41,6 +26,6 @@ ul,h1,h2,h3,h4,h5,h6 {
 }
 
 .hero-image > .menu-container {
-  background-color: var(--primary-color-alpha);
+  /* background-color: var(--primary-color-alpha); */
   height: 200px;
 }
