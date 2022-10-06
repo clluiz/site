@@ -1,4 +1,12 @@
+const { format, add, parseISO } = require('date-fns')
+const ptBR = require('date-fns/locale/pt-BR')
+
 module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addFilter('formatDate', date => {
+    return format(add(date, { hours: 3 }), "iiii, dd 'de' MMMM 'de' yyyy", { locale: ptBR })
+  })
+
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addWatchTarget("src/css");
