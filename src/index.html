@@ -17,10 +17,15 @@
 
 <body>
 
-  <header class="h-96 hero-image">
+  <header class="h-48 md:h-96 hero-image">
     <div style="background-color: #0079bA8C; height: 100%;">
       <div class="container text-center mx-auto">
-        <nav class="flex h-36 items-center justify-evenly">
+
+        <nav class="md:hidden h-16">
+
+        </nav>
+        
+        <nav class="hidden md:flex md:h-36 md:items-center md:justify-evenly">
           <a href="index.html">
             <img src="{{ '/images/cleitonluizdev.svg' }}" alt="Logo na parte superior esquerda é um link para a página inicial" width="120" height="100%" />
           </a>
@@ -31,7 +36,7 @@
           </ul>
         </nav>
 
-        <h1 class="text-primary-text text-5xl font-bold mb-10">Transformação digital para sua empresa</h1>
+        <h1 class="hidden text-primary-text text-5xl font-bold mb-10">Transformação digital para sua empresa</h1>
         <p class="text-primary-text text-2xl font-medium">Crio sites, <i>e-commerces</i>
           e
           aplicativos web e mobile sob demanda para sua empresa</p>
@@ -89,27 +94,27 @@
 
     <div class="container mx-auto my-12" style="height: 100%">
 
-      <div class="flex flex-wrap gap-x-16 justify-center">
+      <div class="flex flex-col md:flex md:flex-wrap gap-y-4 md:gap-x-16 align-middle md:justify-center">
 
-        <div class="w-1/8 p-2 flex items-center">
+        <div class="w-1/8 p-2 flex justify-center">
           <a href="https://www.cashu.com.br" target="_blank" rel="noopener">
             <img src="{{ '/images/cashu.webp' | url }}" width="102" height="28" alt="Logo da fintech Cashu" />
           </a>
         </div>
 
-        <div class="w-1/8 p-2 flex items-center bg-kenoby-color kenoby">
+        <div class="w-1/8 p-2 flex justify-center bg-kenoby-color kenoby">
           <a href="https://www.kenoby.com/" target="_blank" rel="noopener">
             <img src="{{ '/images/kenoby.svg' | url }}" width="114" height="40" alt="Logo da empresa de recrutamento e seleção Kenoby" />
           </a>
         </div>
 
-        <div class="w-1/8 p-2 flex items-center bg-black houer">
+        <div class="w-1/8 p-2 flex justify-center bg-black houer">
           <a href="https://www.houer.com.br" target="_blank" rel="noopener">
             <img src="{{ '/images/houer.png' | url }}" width="180" height="65" alt="Logo da empresa de engenharia Houer" />
           </a>
         </div>
 
-        <div class="w-1/8 p-2 flex items-center">
+        <div class="w-1/8 p-2 flex justify-center">
           <a href="https://youxgroup.com.br" target="_blank" rel="noopener">
             <img src="{{ '/images/youx.png' | url }}" width="180" height="81" alt="Logo do grupo Youx" />
           </a>
@@ -194,36 +199,6 @@
     <small class="absolute text-white font-medium text-center w-full inline-block bg-primary-color">Copyright © 2022 Cleiton Luiz Rocha Teodoro</small>
 
   </footer>
-
-  <!-- <script>
-
-    function selectLink(hash) {
-      if (hash) {
-        document.querySelectorAll('.menu-link').forEach(element => {
-          if (element.getAttribute('href') === hash) {
-            element.classList.add('active-page');
-          } else {
-            element.classList.remove('active-page');
-          }
-        })
-      } else {
-        document.querySelectorAll('.menu-link').forEach(element => {
-          element.classList.remove('active-page');
-        });
-      }
-    }
-
-    function configureMenu() {
-      var hash = window.location.hash;
-      selectLink(hash);
-    }
-
-    window.onhashchange = function (event) {
-      var hash = event.path[0].location.hash;
-      selectLink(hash);
-    }
-
-  </script> -->
 
 </body>
 
