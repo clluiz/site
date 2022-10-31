@@ -20,7 +20,23 @@
 
   <header class="h-20 hero-image">
     <div style="background-color: #0079bA8C; height: 100%;">
+      
       <div class="container text-center mx-auto">
+        
+        <nav class="md:hidden h-16 flex justify-end p-4">
+          <div class="space-y-2" role="button cursor-pointer" onclick="toggleMenu()">
+            <div class="w-6 h-1 bg-white"></div>
+            <div class="w-6 h-1 bg-white"></div>
+            <div class="w-6 h-1 bg-white"></div>
+          </div>
+        </nav>
+
+        <ul id="links" class="hidden absolute bg-primary-color w-full py-4">
+          <li><a class="text-white font-semibold underline h-8 py-2 inline-block" href="/index.html#servicos">Serviços</a></li>
+          <li><a class="text-white font-semibold underline h-8 py-2 inline-block" href="blog.html">Blog</a></li>
+          <li><a class="text-white font-semibold underline h-8 py-2 inline-block" href="/index.html#portfolio">Portfólio</a></li>
+        </ul>
+
         <nav class="flex items-center justify-evenly py-5">
           <a href="/index.html">
             <img src="{{ '/images/cleitonluizdev.svg' }}" alt="Logo na parte superior esquerda é um link para a página inicial" width="120" height="100%" />
@@ -41,15 +57,15 @@
     {{ content | safe }}
   </main>
 
-  <footer class="footer bg-primary-color h-72 py-4">
+  <footer class="footer bg-primary-color h-4 py-2 md:h-72 md:py-4">
 
-    <div class="container mx-auto h-full">
+    <div class="hidden md:block container mx-auto h-full">
 
       <div class="columns-2 h-full">
 
         <div class="w-full flex flex-col items-center text-white h-full">
           
-          <h4 class="font-bold text-2xl mb-2">Redes sociais</h4>
+          <h3 class="font-bold text-2xl mb-2">Redes sociais</h3>
           
           <ul class="w-full flex flex-col items-center gap-y-5">
             <li>
@@ -77,20 +93,20 @@
 
         <div class="w-full flex flex-col items-center text-white h-full">
           
-          <h4 class="font-bold text-2xl mb-2">Mapa do site</h4>
+          <h3 class="font-bold text-2xl mb-2">Mapa do site</h3>
           
           <ul class="w-full flex flex-col items-center gap-y-5">
             <li>
-              <a class="font-medium" href="/index.html">Home</a>
+              <a class="font-medium" href="#">Home</a>
             </li>
             <li>
-              <a class="font-medium" href="/blog.html">Blog</a>
+              <a class="font-medium" href="blog.html">Blog</a>
             </li>
             <li>
-              <a class="font-medium" href="/index.html#servicos">Serviços</a>
+              <a class="font-medium" href="#servicos">Serviços</a>
             </li>
             <li>
-              <a class="font-medium" href="/index.html#portfolio">Portfólio</a>
+              <a class="font-medium" href="#portfolio">Portfólio</a>
             </li>
           </ul>
         </div>
@@ -103,5 +119,18 @@
 
   </footer>
 </body>
+
+<script>
+  function toggleMenu() {
+    var links = document.getElementById("links");
+    if (links.classList.contains("hidden")) {
+      links.classList.remove("hidden");
+      links.classList.add("block");
+    } else {
+      links.classList.remove("block");
+      links.classList.add("hidden");
+    }
+  }
+</script>
 
 </html>
