@@ -1,7 +1,6 @@
 {
   "scripts": {
     "serve": "eleventy --serve & npx tailwindcss -i src/css/main.css -o public/css/main.css --watch",
-    "build:old": "eleventy",
     "build": "ELEVENTY_PRODUCTION=true eleventy && NODE_ENV=production npx tailwindcss -i src/css/main.css -o public/css/main.css --minify"
   },
   "dependencies": {
