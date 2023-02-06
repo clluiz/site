@@ -34,10 +34,11 @@
           <li><a class="text-white font-semibold underline h-8 py-2 inline-block" href="blog.html">Blog</a></li>
           <li><a class="text-white font-semibold underline h-8 py-2 inline-block" href="#portfolio">Portfólio</a></li>
         </ul>
-      
+
         <nav class="hidden md:flex md:h-36 md:items-center md:justify-evenly">
           <a href="index.html">
-            <img src="{{ '/images/cleitonluizdev.svg' }}" alt="Logo na parte superior esquerda é um link para a página inicial" width="120" height="100%" />
+            <img src="{{ '/images/cleitonluizdev.svg' }}"
+              alt="Logo na parte superior esquerda é um link para a página inicial" width="120" height="100%" />
           </a>
           <ul class="flex justify-center gap-48">
             <li><a class="text-white font-semibold underline" href="#servicos">Serviços</a></li>
@@ -46,14 +47,29 @@
           </ul>
         </nav>
 
-        <h1 class="hidden text-primary-text text-5xl font-bold mb-10 md:block">Transformação digital para sua empresa</h1>
+        <h1 class="hidden text-primary-text text-5xl font-bold mb-10 md:block">Olá, meu nome é Cleiton Luiz</h1>
+
+        <p class="text-primary-text text-2xl font-medium">Eu ajudo sua agência digital ou software house a resolver
+          débitos técnicos.</p>
+
+        <!-- <h1 class="hidden text-primary-text text-5xl font-bold mb-10 md:block">Transformação digital para sua empresa</h1>
         <p class="text-primary-text text-2xl font-medium">Crio sites, <i>e-commerces</i>
           e
-          aplicativos web e mobile sob demanda para sua empresa</p>
+          aplicativos web e mobile sob demanda para sua empresa</p> -->
       </div>
 
     </div>
   </header>
+
+  <div class="text-center bg-light-gray py-8 text-secondary-color font-medium">
+    <p class="text-lg">Sua empresa precisa de um programador?</p>
+    <br />
+    <p class="text-lg">Tenho com mais de 10 anos de experiência desenvolvendo sites e aplicações web. Atuando no
+      frontend e backend.</p>
+    <br />
+    <p class="text-lg">Se sua empresa ou clientes tem projetos que envolvam javascript, nodejs, react, vue, python. Eu
+      posso te ajudar! </p>
+  </div>
 
   <section id="servicos" class="mt-8" style="min-height: 500px">
 
@@ -61,7 +77,7 @@
 
     <div class="container mx-auto my-10 md:my-28 h-full">
 
-      <div class="px-8 columns-1 md:columns-4">
+      <div class="px-8 columns-1 md:columns-3">
 
         <div class="w-full flex flex-col items-center gap-y-4 mb-4">
           <img src="{{ '/images/sites.svg' | url }}" width="125" height="125"
@@ -92,14 +108,14 @@
           </div>
         </div>
 
-        <div class="w-full flex flex-col items-center gap-y-4 mb-4">
+        <!-- <div class="w-full flex flex-col items-center gap-y-4 mb-4">
           <img src="{{ '/images/analisedados.svg' | url }}" width="125" height="125"
             alt="Uma imagem com gráfico para exemplificar um aplicativo" />
           <h3 class="font-semibold">Análise de Dados</h3>
           <div>
             <p>Projetos de análise de dados e ciência de dados</p>
           </div>
-        </div>        
+        </div>         -->
 
       </div>
     </div>
@@ -123,13 +139,16 @@
 
         <div class="w-1/8 p-2 flex flex-col justify-center items-center">
           <a class="p-8 bg-kenoby-color" href="https://www.kenoby.com/" target="_blank" rel="noopener">
-            <img src="{{ '/images/kenoby.svg' | url }}" width="114" height="40" alt="Logo da empresa de recrutamento e seleção Kenoby" />
+            <img src="{{ '/images/kenoby.svg' | url }}" width="114" height="40"
+              alt="Logo da empresa de recrutamento e seleção Kenoby" />
           </a>
         </div>
 
         <div class="w-1/8 p-2 flex flex-col justify-center items-center">
-          <a class="p-8 bg-black flex-col justify-center" href="https://www.houer.com.br" target="_blank" rel="noopener">
-            <img src="{{ '/images/houer.png' | url }}" width="180" height="65" alt="Logo da empresa de engenharia Houer" />
+          <a class="p-8 bg-black flex-col justify-center" href="https://www.houer.com.br" target="_blank"
+            rel="noopener">
+            <img src="{{ '/images/houer.png' | url }}" width="180" height="65"
+              alt="Logo da empresa de engenharia Houer" />
           </a>
         </div>
 
@@ -151,10 +170,46 @@
 
     <a href="https://wa.me/5535999237753/?text=
     Ol%C3%A1%20Cleiton!%20Entrei%20no%20seu%20site%20e%20estou%20interessado%20em%20saber%20mais%20sobre%20seus%20servi%C3%A7os
-    " target="_blank" rel="noopener" class="w-96 mt-8 p-8 rounded-2xl mx-auto h-24 block hover:bg-red-400 bg-red-700 font-bold text-rose-100">
+    " target="_blank" rel="noopener"
+      class="w-96 mt-8 p-8 rounded-2xl mx-auto h-24 block hover:bg-red-400 bg-red-700 font-bold text-rose-100">
       Entre em contato comigo!
     </a>
 
+    </div>
+
+  </section>
+
+  <section id="testemunhos" class="py-8 flex flex-col justify-center" style="background-color: #EFEFEF59; min-height: 300px;">
+    
+    <h2 class="text-3xl font-semibold text-center">Testemunhos</h2>
+
+    <div class="container mx-auto my-10 md:my-28 h-full">
+      
+      <div class="flex flex-col md:flex-row md:flex-wrap gap-y-4 md:gap-x-16 align-middle md:justify-center">
+        
+        <div class="mb-10 max-w-sm rounded overflow-hidden shadow-lg p-4">
+          
+          <p class="my-2 text-dark-gray">
+            Cleiton é um profissional com excelente conhecimento técnico na área de desenvolvimento de sistemas (web e
+            mobile). Ao todo trabalhamos juntos por mais de 5 anos por quatro empresas diferentes. É um especialista em
+            Javascript independentemente do framework.
+          </p>
+    
+          <a class="underline text-secondary-color" href="https://www.linkedin.com/in/elias-bruno-de-castro-lasmar/" rel="noopener" target="_blank">Elias Lasmar</a>
+        </div>
+    
+        <div class="mb-10 max-w-sm rounded overflow-hidden shadow-lg p-4">
+          
+          <p class="my-2 text-dark-gray">
+            Cleiton is a great guy, he is aware of technology trends and which one worth to learn.
+            Always willing to help other team members explaining complex problems and how to solve it.
+            Expect him to work hard and deliver what was proposed.
+          </p>
+          
+          <a class="underline text-secondary-color" href="https://www.linkedin.com/in/heltonrodriguesrubyonrails/" rel="noopener" target="_blan
+          ">Helton Rodrigues</a>
+        </div>
+      </div>
     </div>
 
   </section>
@@ -166,25 +221,28 @@
       <div class="columns-2 h-full">
 
         <div class="w-full flex flex-col items-center text-white h-full">
-          
+
           <h3 class="font-bold text-2xl mb-2">Redes sociais</h3>
-          
+
           <ul class="w-full flex flex-col items-center gap-y-5">
             <li>
-              <a class="font-medium flex items-center gap-x-5" href="https://www.linkedin.com/in/cleiton-luiz-nodejs-javascript/" target="_blank" rel="noopener">
+              <a class="font-medium flex items-center gap-x-5"
+                href="https://www.linkedin.com/in/cleiton-luiz-nodejs-javascript/" target="_blank" rel="noopener">
                 <img src="{{ '/images/linkedin.svg' | url }}" alt="Logo do linkedin" width="30px" height="30px" />
                 Linkedin
               </a>
             </li>
             <li>
-              <a class="font-medium flex items-center gap-x-5" href="https://github.com/clluiz" target="_blank" rel="noopener">
+              <a class="font-medium flex items-center gap-x-5" href="https://github.com/clluiz" target="_blank"
+                rel="noopener">
                 <img src="{{ '/images/github.svg' | url }}" alt="Logo do github mostrando o octocat" width="30px"
                   height="30px" />
                 Github
               </a>
             </li>
             <li>
-              <a class="font-medium flex items-center gap-x-5" href="https://twitter.com/cleiton_dev" target="_blanck" rel="noopener">
+              <a class="font-medium flex items-center gap-x-5" href="https://twitter.com/cleiton_dev" target="_blanck"
+                rel="noopener">
                 <img src="{{ '/images/twitter.svg' | url }}" alt="Logo do github mostrando o octocat" width="30px"
                   height="30px" />
                 Twitter
@@ -194,9 +252,9 @@
         </div>
 
         <div class="w-full flex flex-col items-center text-white h-full">
-          
+
           <h3 class="font-bold text-2xl mb-2">Mapa do site</h3>
-          
+
           <ul class="w-full flex flex-col items-center gap-y-5">
             <li>
               <a class="font-medium" href="#">Home</a>
@@ -212,12 +270,13 @@
             </li>
           </ul>
         </div>
-      
+
       </div>
 
     </div>
-    
-    <small class="absolute text-white font-medium text-center w-full inline-block bg-primary-color">Copyright © 2022 Cleiton Luiz Rocha Teodoro</small>
+
+    <small class="absolute text-white font-medium text-center w-full inline-block bg-primary-color">Copyright © 2022
+      Cleiton Luiz Rocha Teodoro</small>
 
   </footer>
 
@@ -234,10 +293,6 @@
       links.classList.add("hidden");
     }
   }
-
-  // window.addEventListener('pageshow', function() {
-  //   alert('a')
-  // })
 </script>
 
 </html>
