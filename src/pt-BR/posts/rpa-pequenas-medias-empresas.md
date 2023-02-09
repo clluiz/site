@@ -9,6 +9,8 @@ locale: pt-BR
 
 # Benefícios do uso de RPA para pequenas e médias empresas
 
+## Este post foi gerado usando chatgpt
+
 Robotic Process Automation (RPA) é uma tecnologia de automação de processos baseada em software que permite a automação de tarefas repetitivas e manuais, liberando tempo e recursos para tarefas mais estratégicas. Nos últimos anos, muitas pequenas e médias empresas no Brasil têm adotado a RPA como uma forma de aumentar a eficiência, reduzir custos e melhorar a qualidade dos serviços oferecidos aos clientes.
 
 Aqui estão alguns dos principais benefícios da RPA para pequenas e médias empresas no Brasil:
