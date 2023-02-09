@@ -31,9 +31,9 @@
         </nav>
 
         <ul id="links" class="hidden absolute bg-primary-color w-full py-4">
-          <li><a class="text-white font-semibold underline h-8 py-2 inline-block" href="#servicos">Serviços</a></li>
-          <li><a class="text-white font-semibold underline h-8 py-2 inline-block" href="blog.html">Blog</a></li>
-          <li><a class="text-white font-semibold underline h-8 py-2 inline-block" href="#portfolio">Portfólio</a></li>
+          <li><a class="text-white font-semibold underline h-8 py-2 inline-block" href="#servicos">{{ 'services' | i18n }}</a></li>
+          <li><a class="text-white font-semibold underline h-8 py-2 inline-block" href="blog.html">{{ 'blog' | i18n }}</a></li>
+          <li><a class="text-white font-semibold underline h-8 py-2 inline-block" href="#portfolio">{{ 'portfolio' | i18n }}</a></li>
         </ul>
 
         <nav class="hidden md:flex md:h-36 md:items-center md:justify-evenly">
@@ -42,39 +42,31 @@
               alt="Logo na parte superior esquerda é um link para a página inicial" width="120" height="100%" />
           </a>
           <ul class="flex justify-center gap-48">
-            <li><a class="text-white font-semibold underline" href="#servicos">Serviços</a></li>
-            <li><a class="text-white font-semibold underline" href="blog.html">Blog</a></li>
-            <li><a class="text-white font-semibold underline" href="#portfolio">Portfólio</a></li>
+            <li><a class="text-white font-semibold underline" href="#servicos">{{ 'services' | i18n }}</a></li>
+            <li><a class="text-white font-semibold underline" href="blog.html">{{ 'blog' | i18n }}</a></li>
+            <li><a class="text-white font-semibold underline" href="#portfolio">{{ 'portfolio' | i18n }}</a></li>
           </ul>
         </nav>
 
-        <h1 class="hidden text-primary-text text-5xl font-bold mb-10 md:block">Olá</h1>
+        <h1 class="hidden text-primary-text text-5xl font-bold mb-10 md:block">{{ 'greetings' | i18n }}</h1>
 
-        <p class="text-primary-text text-2xl font-medium">Eu ajudo sua agência digital ou software house a resolver
-          débitos técnicos.</p>
-
-        <!-- <h1 class="hidden text-primary-text text-5xl font-bold mb-10 md:block">Transformação digital para sua empresa</h1>
-        <p class="text-primary-text text-2xl font-medium">Crio sites, <i>e-commerces</i>
-          e
-          aplicativos web e mobile sob demanda para sua empresa</p> -->
+        <p class="text-primary-text text-2xl font-medium">{{ 'what_i_do' | i18n  }}</p>
       </div>
 
     </div>
   </header>
 
   <div class="text-center bg-light-gray py-8 text-secondary-color font-medium">
-    <p class="text-lg">Sua empresa precisa de um programador?</p>
+    <p class="text-lg">{{ 'catch_question' | i18n }}</p>
     <br />
-    <p class="text-lg">Tenho com mais de 10 anos de experiência desenvolvendo sites e aplicações web. Atuando no
-      frontend e backend.</p>
+    <p class="text-lg">{{ 'experience' | i18n }}</p>
     <br />
-    <p class="text-lg">Se sua empresa ou clientes tem projetos que envolvam javascript, nodejs, react, vue, python. Eu
-      posso te ajudar! </p>
+    <p class="text-lg">{{ 'skills' | i18n }}</p>
   </div>
 
   <section id="servicos" class="mt-8" style="min-height: 500px">
 
-    <h2 class="text-3xl font-semibold text-center">Serviços</h2>
+    <h2 class="text-3xl font-semibold text-center">{{ 'services' | i18n }}</h2>
 
     <div class="container mx-auto my-10 md:my-28 h-full">
 
@@ -85,7 +77,7 @@
             alt="Uma imagem exibindo um site estilizado para ilustrar o serviço de desenvolvimento de sites" />
           <h3 class="font-semibold">Sites</h3>
           <div>
-            <p>Sites que convertem visitantes em clientes</p>
+            <p>{{ 'service_sites' | i18n }}</p>
           </div>
         </div>
 
@@ -94,18 +86,16 @@
             alt="Ilustração representando um caminhão dando a volta no mundo para ilustrar o e-commerce" />
           <h3 class="font-semibold">E-commerce</h3>
           <div>
-            <p>Integração de plataformas de e-commerce, meios de pagamento, templates
-              customizados</p>
+            <p>{{ 'service_e_commerce' | i18n }}</p>
           </div>
         </div>
 
         <div class="w-full flex flex-col items-center gap-y-4 mb-4">
           <img src="{{ '/images/software.svg' | url }}" width="125" height="125"
             alt="Uma imagem com gráfico para exemplificar um aplicativo" />
-          <h3 class="font-semibold">Aplicativos</h3>
+          <h3 class="font-semibold">{{ 'applications' | i18n }}</h3>
           <div>
-            <p>Aplicativos para web e dispositivos móveis de acordo
-              com as necessidades da sua empresa</p>
+            <p>{{ 'service_app' | i18n }}</p>
           </div>
         </div>
 
@@ -124,9 +114,9 @@
 
   <section id="portfolio" class="py-8 flex flex-col justify-center" style="background-color: #EFEFEF59; min-height: 300px;">
 
-    <h2 class="text-3xl font-semibold text-center">Portfólio</h2>
+    <h2 class="text-3xl font-semibold text-center">{{ 'portfolio' | i18n }}</h2>
 
-    <p class="text-center">Empresas para as quais já prestei serviços</p>
+    <p class="text-center">{{ 'worked_companies' | i18n }}</p>
 
     <div class="container mx-auto my-12" style="height: 100%">
 
@@ -167,13 +157,13 @@
 
   <section id="contato" class="container mx-auto text-center h-96 py-8">
 
-    <h2 class="text-3xl font-semibold">Contato</h2>
+    <h2 class="text-3xl font-semibold">{{ 'contact' | i18n }}</h2>
 
     <a href="https://wa.me/5535999237753/?text=
     Ol%C3%A1%20Cleiton!%20Entrei%20no%20seu%20site%20e%20estou%20interessado%20em%20saber%20mais%20sobre%20seus%20servi%C3%A7os
     " target="_blank" rel="noopener"
       class="w-96 mt-8 p-8 rounded-2xl mx-auto h-24 block hover:bg-red-400 bg-red-700 font-bold text-rose-100">
-      Entre em contato comigo!
+      {{ 'get_in_touch' | i18n }}
     </a>
 
     </div>
@@ -182,7 +172,7 @@
 
   <section id="testemunhos" class="py-8 flex flex-col justify-center" style="background-color: #EFEFEF59; min-height: 300px;">
     
-    <h2 class="text-3xl font-semibold text-center">Testemunhos</h2>
+    <h2 class="text-3xl font-semibold text-center">{{ 'testimonials' | i18n }}</h2>
 
     <div class="container mx-auto my-10 md:my-28 h-full">
       
@@ -223,7 +213,7 @@
 
         <div class="w-full flex flex-col items-center text-white h-full">
 
-          <h3 class="font-bold text-2xl mb-2">Redes sociais</h3>
+          <h3 class="font-bold text-2xl mb-2">{{ 'social_networks' | i18n }}</h3>
 
           <ul class="w-full flex flex-col items-center gap-y-5">
             <li>
@@ -254,20 +244,20 @@
 
         <div class="w-full flex flex-col items-center text-white h-full">
 
-          <h3 class="font-bold text-2xl mb-2">Mapa do site</h3>
+          <h3 class="font-bold text-2xl mb-2">{{ 'site_map' | i18n }}</h3>
 
           <ul class="w-full flex flex-col items-center gap-y-5">
             <li>
               <a class="font-medium" href="#">Home</a>
             </li>
             <li>
-              <a class="font-medium" href="blog.html">Blog</a>
+              <a class="font-medium" href="blog.html">{{ 'blog' | i18n }}</a>
             </li>
             <li>
-              <a class="font-medium" href="#servicos">Serviços</a>
+              <a class="font-medium" href="#servicos">{{ 'services' | i18n }}</a>
             </li>
             <li>
-              <a class="font-medium" href="#portfolio">Portfólio</a>
+              <a class="font-medium" href="#portfolio">{{ 'portfolio' | i18n }}</a>
             </li>
           </ul>
         </div>
