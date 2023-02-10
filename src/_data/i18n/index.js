@@ -70,5 +70,13 @@ module.exports = {
     applications: {
         'en-US': 'Apps',
         'pt-BR': 'Aplicativos'
+    },
+    brazil_flag: {
+        'en-US': 'Brazil flag',
+        'pt-BR': 'Bandeira do Brasil'
+    },
+    america_flag: {
+        'en-US': 'America flag',
+        'pt-BR': 'Bandeira dos Estados Unidos'
     }
 };
