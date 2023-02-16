@@ -1,7 +1,6 @@
-const { format, add, parseISO } = require('date-fns')
+const { format, add } = require('date-fns')
 const i18n = require('eleventy-plugin-i18n');
 const translations = require('./src/_data/i18n');
-const { EleventyI18nPlugin } = require("@11ty/eleventy");
 const { enUS, ptBR } = require('date-fns/locale');
 
 const locales = {
@@ -33,6 +32,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: "src",
       output: "public",
+      data: "_data"
     }
   }
 }

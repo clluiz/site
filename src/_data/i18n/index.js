@@ -52,7 +52,7 @@ module.exports = {
         'pt-BR': 'Contato'
     },
     get_in_touch: {
-        'en-US': 'contact me!',
+        'en-US': 'Contact me!',
         'pt-BR': 'Entre em contato comigo'
     },
     testimonials: {
@@ -78,5 +78,13 @@ module.exports = {
     america_flag: {
         'en-US': 'America flag',
         'pt-BR': 'Bandeira dos Estados Unidos'
+    },
+    description_portofolio: {
+        'en-US': 'Some of the main projects I worked on',
+        'pt-BR': 'Alguns do principais projetos em que atuei'
+    },
+    main_techs: {
+        'en-US': 'Tech stack',
+        'pt-BR': 'Principais tecnologias utilizadas'
     }
 };

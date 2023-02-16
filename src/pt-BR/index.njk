@@ -130,14 +130,14 @@
     </div>
   </section>
 
-  <section id="portfolio" class="py-8 flex flex-col justify-center"
-    style="background-color: #EFEFEF59; min-height: 300px;">
+  <section id="portfolio" class="py-8 flex flex-col justify-center bg-light-gray"
+    style="min-height: 300px;">
 
     <h2 class="text-3xl font-semibold text-center">{{ 'portfolio' | i18n }}</h2>
 
-    <p class="text-center">{{ 'worked_companies' | i18n }}</p>
+      <p class="text-center">{{ 'description_portofolio' | i18n }}</p>
 
-    <div class="container mx-auto my-12" style="height: 100%">
+    <!-- <div class="container mx-auto my-12" style="height: 100%">
 
       <div class="flex flex-col md:flex-row md:flex-wrap gap-y-4 md:gap-x-16 align-middle md:justify-center">
 
@@ -170,7 +170,13 @@
 
       </div>
 
+    </div> -->
+
+    <div class="container mx-auto my-12 min-h-full">
+      {% include "portfolio.njk" %}
     </div>
+
+
 
   </section>
 
