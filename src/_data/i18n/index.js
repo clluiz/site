@@ -86,5 +86,13 @@ module.exports = {
     main_techs: {
         'en-US': 'Tech stack',
         'pt-BR': 'Principais tecnologias utilizadas'
+    },
+    skills: {
+        'en-US': 'My main skills',
+        'pt-BR': 'Minhas principais habilidades'
+    },
+    years: {
+        'en-US': 'years of experience',
+        'pt-BR': 'anos de experiência'
     }
 };
