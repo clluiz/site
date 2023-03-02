@@ -12,8 +12,8 @@ module.exports = {
         'pt-BR': 'A sua empresa precisa de um desenvolvedor web/mobile?'
     },
     experience: {
-        'en-US': 'I have over 10 years of experience developing websites and web applications. Working on the frontend and backend.',
-        'pt-BR': 'Tenho com mais de 10 anos de experiência desenvolvendo sites e aplicações web. Atuando no frontend e backend.'
+        'en-US': 'I have over 10 years of experience developing websites and web applications working on the frontend and backend.',
+        'pt-BR': 'Tenho com mais de 10 anos de experiência desenvolvendo sites e aplicações web atuando no frontend e backend.'
     },
     skills: {
         'en-US': 'If your company or clients have projects involving javascript, nodejs, react, react native, vue, python. I can help you!',
@@ -52,8 +52,8 @@ module.exports = {
         'pt-BR': 'Contato'
     },
     get_in_touch: {
-        'en-US': 'Contact me!',
-        'pt-BR': 'Entre em contato comigo'
+        'en-US': 'Get in touch!',
+        'pt-BR': 'Entre em contato!'
     },
     testimonials: {
         'en-US': 'Testimonials',
@@ -94,5 +94,25 @@ module.exports = {
     years: {
         'en-US': 'years of experience',
         'pt-BR': 'anos de experiência'
+    },
+    your_email: {
+        'en-US': 'Your email',
+        'pt-BR': 'Seu email'
+    },
+    your_name: {
+        'en-US': 'Your name',
+        'pt-BR': 'Seu nome'
+    },
+    subject: {
+        'en-US': 'Subject',
+        'pt-BR': 'Assunto'
+    },
+    message: {
+        'en-US': 'Message',
+        'pt-BR': 'Mensagem'
+    },
+    send: {
+        'en-US': 'Send',
+        'pt-BR': 'Enviar'
     }
 };
