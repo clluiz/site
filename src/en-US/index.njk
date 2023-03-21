@@ -15,7 +15,7 @@
         desenvolvimento de software">
     <link rel="stylesheet" href="{{ '/css/styles.css' | url }}"/>
     <link rel="stylesheet" href="{{ '/css/main.css' | url }}"/>
-    <script defer data-domain="cleitonluizdev.com.br" src="https://plausible.io/js/script.js"></script>
+    <link rel="canonical" href="https://cleitonluizdev.com.br/"/>
   </head>
   <body>
     <header class="h-60 md:h-96 hero-image">
@@ -86,25 +86,32 @@
         {{ 'get_in_touch' | i18n }}
       </a>
     </div>
-    <section id="servicos" class="mt-8" style="min-height: 500px">
+    
+    <section id="servicos" class="mt-8 h-fit">
+      
       <h2 class="text-3xl font-semibold text-center">{{ 'services' | i18n }}</h2>
-      <div class="container mx-auto my-10 md:my-28 h-full">
+      
+      <div class="container mx-auto my-10 md:my-28">
+        
         <div class="px-8 columns-1 md:columns-3">
-          <div class="w-full flex flex-col items-center gap-y-4 mb-4">
+          
+          <div class="flex flex-col items-center">
             <img src="{{ '/images/sites.svg' | url }}" width="125" height="125" alt="Uma imagem exibindo um site estilizado para ilustrar o serviço de desenvolvimento de sites"/>
             <h3 class="font-semibold">Sites</h3>
             <div>
               <p>{{ 'service_sites' | i18n }}</p>
             </div>
           </div>
-          <div class="w-full flex flex-col items-center gap-y-4 mb-4">
+          
+          <div class="flex flex-col items-center">
             <img src="{{ '/images/ecommerce.svg' | url }}" width="125" height="125" alt="Ilustração representando um caminhão dando a volta no mundo para ilustrar o e-commerce"/>
             <h3 class="font-semibold">E-commerce</h3>
             <div>
               <p>{{ 'service_e_commerce' | i18n }}</p>
             </div>
           </div>
-          <div class="w-full flex flex-col items-center gap-y-4 mb-4">
+          
+          <div class="flex flex-col items-center">
             <img src="{{ '/images/software.svg' | url }}" width="125" height="125" alt="Uma imagem com gráfico para exemplificar um aplicativo"/>
             <h3 class="font-semibold">{{ 'applications' | i18n }}</h3>
             <div>
@@ -120,6 +127,7 @@
         </div>
       </div>
     </section>
+    
     <section id="portfolio" class="py-8 flex flex-col justify-center bg-light-gray" style="min-height: 300px;">
       <h2 class="text-3xl font-semibold text-center">{{ 'portfolio' | i18n }}</h2>
       <p class="text-center">{{ 'description_portofolio' | i18n }}</p>
@@ -191,7 +199,7 @@
               href="https://www.linkedin.com/in/heltonrodriguesrubyonrails/"
               rel="noopener"
               target="_blan
-                                                          ">Helton Rodrigues</a>
+                                                                          ">Helton Rodrigues</a>
           </div>
           <div class="mb-10 max-w-sm rounded overflow-hidden shadow-lg p-4">
             <p class="my-2 text-dark-gray">
@@ -206,7 +214,7 @@
               href="https://www.linkedin.com/in/hebertbrandao/"
               rel="noopener"
               target="_blan
-                                                          ">Hebert Vitor</a>
+                                                                          ">Hebert Vitor</a>
           </div>
         </div>
       </div>
@@ -214,11 +222,11 @@
     <section id="contato" class="container mx-auto text-center h-fit py-8">
       <h2 class="text-3xl font-semibold">{{ 'contact' | i18n }}</h2>
       {# <a href="https://wa.me/5535999237753/?text=
-                      Ol%C3%A1%20Cleiton!%20Entrei%20no%20seu%20site%20e%20estou%20interessado%20em%20saber%20mais%20sobre%20seus%20servi%C3%A7os
-                      " target="_blank" rel="noopener"
-                        class="w-96 mt-8 p-8 rounded-2xl mx-auto h-24 block hover:bg-red-400 bg-red-700 font-bold text-rose-100">
-                        {{ 'get_in_touch' | i18n }}
-                      </a> #}
+                            Ol%C3%A1%20Cleiton!%20Entrei%20no%20seu%20site%20e%20estou%20interessado%20em%20saber%20mais%20sobre%20seus%20servi%C3%A7os
+                            " target="_blank" rel="noopener"
+                              class="w-96 mt-8 p-8 rounded-2xl mx-auto h-24 block hover:bg-red-400 bg-red-700 font-bold text-rose-100">
+                              {{ 'get_in_touch' | i18n }}
+                            </a> #}
       <form
         name="contact"
         method="POST"
