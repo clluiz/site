@@ -26,7 +26,7 @@ const convertVideoToBase64String = async (videoUri) => {
         encoding: FileSystem.EncodingType.Base64,
         length: chunkSize,
       };
-      const chunk = await FileSystem.readAsStringAsync(capturedFromCamera.uri, {
+      const chunk = await FileSystem.readAsStringAsync(videoUri, {
         ...options,
         position: offset,
       });
