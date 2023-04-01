@@ -1,3 +1,12 @@
+---
+layout: post.njk
+permalink: /en-US/blog/convert-video-to-base-64-react-native-expo.html
+date: 2023-04-01
+description: Quick tip for using streams and memory optimization in React Native
+title: Using streams to convert video to string base 64
+locale: en-US
+---
+
 # Tips
 
 If, for some reason, you need to convert a large video file to a base64 string in a React Native or Expo app, you can use the code in the image below.
