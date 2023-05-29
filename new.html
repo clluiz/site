@@ -25,29 +25,32 @@
     </div>
   </header>
 
-  <main class="max-w-screen-lg mx-auto">
+  <main class="px-4 md:px-0 md:max-w-screen-lg mx-auto">
 
     <div class="container mx-auto">
 
-      <section class="relative h-[58rem] flex items-center justify-center">
-        <div class="h-full bg-cyan-300 w-64 absolute -z-10 left-96"></div>
-        <img class="mx-auto" src="./src/images/dfsfdsf.jpg" width="784" height="588" />
-        <div class="p-7 bg-white w-[38rem] h-[24rem] absolute z-10 -right-[10rem] -bottom-[6rem]">
+      <section class="md:relative md:h-[58rem] flex items-center justify-center">
+        <div class="hidden md:block h-full bg-cyan-300 w-64 absolute -z-10 left-96"></div>
+        
+        <img class="hidden md:inline-block md:mx-auto" src="./src/images/dfsfdsf.jpg" width="784" height="588" />
+        
+        <div class="p-7 bg-white w-[38rem] h-[32rem] md:h-[24rem] md:absolute md:z-10 md:-right-[10rem] md:-bottom-[6rem]">
           <h1 class="text-3xl font-bold text-violet-900 mb-6">Hi, my name is Cleiton Luiz</h1>
-          <p class="text-lg text-left text-gray-700 font-semibold">Unlocking the potential of agencies through
+          <p class="md:text-lg text-left text-gray-700 font-semibold">Unlocking the potential of agencies through
             innovative and impactful technology solutions, I specialize in delivering highly efficient and creatively
             crafted programming solutions that drive exceptional results. With a relentless commitment to quality, my
             expertise empowers agencies to optimize their performance and achieve unparalleled success.</p>
           <a target="_blank" rel="noopener" href="https://calendly.com/cleiton-dev/30min"
             class="inline-block rounded-full text-white text-bold bg-purple-500 p-4 mt-4">Get in touch!</a>
         </div>
-        <div class="bg-white absolute w-[13rem] h-[13rem] rounded-full -left-4 top-16"></div>
+        
+        <div class="hidden md:block  bg-white absolute w-[13rem] h-[13rem] rounded-full -left-4 top-16"></div>
       </section>
 
       <section class="mt-32">
         <h2 class="text-white text-4xl font-semibold font-sans text-center mb-8">Services</h2>
 
-        <div class="relative">
+        <div class="md:relative">
 
           <div class="bg-white w-2/4 p-4">
             <h3 class="text-violet-900 text-lg font-semibold mb-4">For you agency</h3>
@@ -66,7 +69,7 @@
 
         </div>
 
-        <div class="relative mt-16 flex flex-row justify-end">
+        <div class="md:relative mt-16 flex flex-row justify-end">
 
           <div class="bg-white w-2/4 p-4">
             <h3 class="text-violet-900 text-lg font-semibold mb-4">For your business</h3>
@@ -82,7 +85,7 @@
 
         </div>
 
-        <div class="relative mt-16">
+        <div class="md:relative mt-16">
 
           <div class="bg-white w-2/4 p-4">
             <h3 class="text-violet-900 text-lg font-semibold mb-4">For entrepreneurs</h3>
@@ -99,7 +102,7 @@
         </div>
       </section>
 
-      <section class="mt-16 relative">
+      <section class="mt-16 md:relative">
 
         <div class="w-full absolute -z-10 h-16 -z-10 bg-cyan-300 top-72"></div>
 
