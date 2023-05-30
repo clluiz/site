@@ -13,8 +13,8 @@
   flex flex-col space-y-5 text-white duration-300">
     <a href="javascript:void(0)" class="text-right text-4xl" onclick="closeMenu()">&times;</a>
     <a class="hover:text-yellow-300 font-semibold text-lg" href="/">Home</a>
-    <a class="hover:text-yellow-300 font-semibold text-lg" href="blog.html">Blog</a>
-    <a class="hover:text-yellow-300 font-semibold text-lg" href="projects.html">Projects</a>
+    <a class="hover:text-yellow-300 font-semibold text-lg" href="/blog.html">Blog</a>
+    <a class="hover:text-yellow-300 font-semibold text-lg" href="/projects.html">Projects</a>
   </div>
 
   <header class="max-w-screen-lg flex justify-between py-4 mx-auto">
@@ -37,7 +37,7 @@
     {% block content %}{% endblock %}
   </main>
 
-  <footer class="w-full h-16 bg-neutral-500 text-white font-bold text-center">
+  <footer class="sticky h-16 bottom-0 w-full bg-neutral-500 text-white font-bold text-center">
     <small>Copyright © 2022 Cleiton Luiz Rocha Teodoro</small>
   </footer>
 
