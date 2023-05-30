@@ -9,13 +9,21 @@
 
 <body class="bg-indigo-800">
 
+  <div id="side-menu" class="fixed top-0 left-[-250px] w-[240px] h-screen z-50 bg-sky-700/50 p-5
+  flex flex-col space-y-5 text-white duration-300">
+    <a href="javascript:void(0)" class="text-right text-4xl" onclick="closeMenu()">&times;</a>
+    <a class="hover:text-yellow-300 font-semibold text-lg" href="#">Home</a>
+    <a class="hover:text-yellow-300 font-semibold text-lg" href="#">Blog</a>
+    <a class="hover:text-yellow-300 font-semibold text-lg" href="#">Projects</a>
+  </div>
+
   <header class="max-w-screen-lg flex justify-between py-4 mx-auto">
     <div class="text-white font-bold">
       LOGO
     </div>
 
     <div>
-      <img class="inline-block" width="36" src="./src/images/novas/sharp-menu.svg" />
+      <img class="inline-block cursor-pointer" width="36" src="./src/images/novas/sharp-menu.svg" onclick="openMenu()" />
       <a href="https://twitter.com/cleiton_dev" rel="noopener" target="_blank">
         <img class="inline-block" width="36" src="./src/images/novas/twitter.svg" />
       </a>
@@ -31,10 +39,11 @@
 
       <section class="md:relative md:h-[58rem] flex items-center justify-center">
         <div class="hidden md:block h-full bg-cyan-300 w-64 absolute -z-10 left-96"></div>
-        
+
         <img class="hidden md:inline-block md:mx-auto" src="./src/images/dfsfdsf.jpg" width="784" height="588" />
-        
-        <div class="p-7 bg-white w-[38rem] h-fit md:absolute md:z-10 xl:-right-[5rem] lg:right-[2rem] md:-right-[0rem] md:-bottom-[6rem]">
+
+        <div
+          class="p-7 bg-white w-[38rem] h-fit md:absolute md:z-10 xl:-right-[5rem] lg:right-[2rem] md:-right-[0rem] md:-bottom-[6rem]">
           <h1 class="text-3xl font-bold text-violet-900 mb-6">Hi, my name is Cleiton Luiz</h1>
           <p class="md:text-lg text-left text-gray-700 font-semibold">Unlocking the potential of agencies through
             innovative and impactful technology solutions, I specialize in delivering highly efficient and creatively
@@ -43,7 +52,7 @@
           <a target="_blank" rel="noopener" href="https://calendly.com/cleiton-dev/30min"
             class="inline-block rounded-full text-white text-bold bg-purple-500 p-4 mt-4">Get in touch!</a>
         </div>
-        
+
         <div class="hidden md:block  bg-white absolute w-[13rem] h-[13rem] rounded-full -left-4 top-16"></div>
       </section>
 
@@ -109,9 +118,9 @@
         <h2 class="mb-16 text-white text-4xl font-semibold font-sans text-center">Testmonials</h2>
 
         <ul class="lg:flex lg:flex-row justify-center gap-4">
-          
+
           <li class="bg-white mb-10 lg:max-w-sm rounded overflow-hidden shadow-lg p-4">
-            
+
             <p class="my-2 text-gray-700 font-semibold">
               Cleiton is a professional with excellent technical knowledge in systems development (web and mobile).
               Altogether we
@@ -123,7 +132,7 @@
             <a class="underline" href="https://www.linkedin.com/in/elias-bruno-de-castro-lasmar/" rel="noopener"
               target="_blank">Elias Lasmar</a>
           </li>
-          
+
           <li class="bg-white mb-10 lg:max-w-sm rounded overflow-hidden shadow-lg p-4">
             <p class="my-2 text-gray-700 font-semibold md:w-full">
               Cleiton is a great guy, he is aware of technology trends and which one worth to learn. Always willing to
@@ -135,7 +144,7 @@
             <a class="underline" href="https://www.linkedin.com/in/heltonrodriguesrubyonrails/" rel="noopener"
               target="_blank">Helton Rodrigues</a>
           </li>
-          
+
           <li class="bg-white mb-10 lg:max-w-sm rounded overflow-hidden shadow-lg p-4">
             <p class="my-2 text-gray-700 font-semibold">
               I've worked with Cleiton in different opportunities, as a fellow while working at LEMAF and as his
@@ -448,6 +457,19 @@
   <footer class="w-full h-16 bg-neutral-500 text-white font-bold text-center">
     <small>Copyright © 2022 Cleiton Luiz Rocha Teodoro</small>
   </footer>
+
+  <script>
+    var sideMenu = document.getElementById('side-menu');
+    function openMenu() {
+      sideMenu.classList.remove('left-[-250px]');
+      sideMenu.classList.add('left-0');
+    }
+
+    function closeMenu() {
+      sideMenu.classList.remove('left-0');
+      sideMenu.classList.add('left-[-250px]');
+    }
+  </script>
 
 </body>
 
