@@ -1,4 +1,4 @@
-<ul class="container list-none">
+{# <ul class="container list-none">
   {% for post in postslist %}
     {% if post.data.locale == locale %}
       <li class="column-1 my-5">
@@ -8,4 +8,16 @@
       </li>
     {% endif %}
   {% endfor %}
-<ul>
+<ul> #}
+
+<ul class="list-disc px-8">
+
+  {% for post in postslist %}
+    <li class="mb-8">
+      <div>{{ post.data.date }}</div>
+      <h2 class="text-2xl text-violet-700 mb-1">
+        <a class="decoration-violet-700 underline decoration-solid" href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+      <div>{{post.data.description}}</div>
+    </li>
+  {% endfor %}
+</ul> 

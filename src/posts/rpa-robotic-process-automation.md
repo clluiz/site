@@ -1,10 +1,10 @@
 ---
 layout: post.njk
-permalink: /en-US/blog/rpa-streamlining-business-operation.html
+permalink: /blog/rpa-streamlining-business-operation.html
 date: 2023-02-09
 description: Introducing RPA
 title: Robotic Process Automation, Streamlining Business Operations
-locale: en-US
+#locale: en-US
 ---
 
 # Robotic Process Automation: Streamlining Business Operations

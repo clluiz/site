@@ -1,10 +1,10 @@
 ---
 layout: post.njk
-permalink: /en-US/blog/convert-video-to-base-64-react-native-expo.html
+permalink: /blog/convert-video-to-base-64-react-native-expo.html
 date: 2023-04-01
 description: Quick tip for using streams and memory optimization in React Native
 title: Using streams to convert video to string base 64
-locale: en-US
+#locale: en-US
 ---
 
 # Tips

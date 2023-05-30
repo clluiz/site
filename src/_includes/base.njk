@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ '/css/main.css' | url }}"/>
+</head>
+
+<body class="bg-indigo-800">
+
+  <div id="side-menu" class="fixed top-0 left-[-250px] w-[240px] h-screen z-50 bg-sky-700/50 p-5
+  flex flex-col space-y-5 text-white duration-300">
+    <a href="javascript:void(0)" class="text-right text-4xl" onclick="closeMenu()">&times;</a>
+    <a class="hover:text-yellow-300 font-semibold text-lg" href="/">Home</a>
+    <a class="hover:text-yellow-300 font-semibold text-lg" href="blog.html">Blog</a>
+    <a class="hover:text-yellow-300 font-semibold text-lg" href="projects.html">Projects</a>
+  </div>
+
+  <header class="max-w-screen-lg flex justify-between py-4 mx-auto">
+    <div class="text-white font-bold">
+      LOGO
+    </div>
+
+    <div>
+      <img class="inline-block cursor-pointer" width="36" src="{{ '/images/novas/sharp-menu.svg' | url }}" onclick="openMenu()" />
+      <a href="https://twitter.com/cleiton_dev" rel="noopener" target="_blank">
+        <img class="inline-block" width="36" src="{{ '/images/novas/twitter.svg' | url }}" />
+      </a>
+      <a href="https://www.linkedin.com/in/cleiton-luiz-nodejs-javascript-freelancer/" rel="noopener" target="_blank">
+        <img class="inline-block" width="36" src="{{ '/images/novas/linkedin-icon.svg' | url }}" />
+      </a>
+    </div>
+  </header>
+
+  <main class="px-4 lg:px-4 md:max-w-screen-lg mx-auto">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="w-full h-16 bg-neutral-500 text-white font-bold text-center">
+    <small>Copyright © 2022 Cleiton Luiz Rocha Teodoro</small>
+  </footer>
+
+  <script>
+    var sideMenu = document.getElementById('side-menu');
+    function openMenu() {
+      sideMenu.classList.remove('left-[-250px]');
+      sideMenu.classList.add('left-0');
+    }
+
+    function closeMenu() {
+      sideMenu.classList.remove('left-0');
+      sideMenu.classList.add('left-[-250px]');
+    }
+  </script>
+
+</body>
+
+</html>
