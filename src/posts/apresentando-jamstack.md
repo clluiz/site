@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-permalink: /pt-BR/blog/introducao-ao-jam-stack.html
+permalink: /blog/introducao-ao-jam-stack.html
 date: 2021-01-01
 description: Introdução a uma nova forma de criar sites e aplicações web de maneira mais rápida, segura e fácil
 title: Apresentando o JAMStack e seus impactos para os negócios

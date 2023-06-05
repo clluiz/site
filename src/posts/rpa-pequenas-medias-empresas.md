@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-permalink: /pt-BR/blog/rpa-pequenas-medias-empresas.html
+permalink: /blog/rpa-pequenas-medias-empresas.html
 date: 2023-02-09
 description: Como o uso de RPA pode melhorar a produtivdade da sua empresa
 title: RPA para pequenas e médias empresas
