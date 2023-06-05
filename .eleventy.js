@@ -1,5 +1,6 @@
 const markdownIt = require("markdown-it")
 const markdownItClass = require("@toycode/markdown-it-class")
+const { format, add } = require('date-fns')
 
 const mapping = {
   h1: ['text-4xl', 'text-red-400', 'font-bold', "my-8"],
@@ -8,6 +9,7 @@ const mapping = {
   p: ["text-lg", "my-8"],
   ul: ["list-none"]
 };
+
 
 const md = markdownIt({ linkify: true, html: true });
 md.use(markdownItClass, mapping);
@@ -19,6 +21,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("src/css");
   eleventyConfig.addWatchTarget('./tailwind.config.js');
   eleventyConfig.setLibrary('md', md);
+  eleventyConfig.addFilter('formatDate', (date) => {
+    return format(add(date, { hours: 3 }), "dd/MM/yyyy")
+  }) 
   
   return {
     markdownTemplateEngine: "njk",
