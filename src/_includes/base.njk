@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -21,7 +21,7 @@
 
   <div id="side-menu" class="fixed top-0 left-[-250px] w-[240px] h-screen z-50 bg-sky-700/50 p-5
   flex flex-col space-y-5 text-white duration-300">
-    <a href="javascript:void(0)" class="text-right text-4xl" onclick="closeMenu()">&times;</a>
+    <button class="text-right text-4xl" onclick="closeMenu()">&times;</button>
     <a class="hover:text-yellow-300 font-semibold text-lg" href="/">Home</a>
     <a class="hover:text-yellow-300 font-semibold text-lg" href="/blog.html">Blog</a>
     <a class="hover:text-yellow-300 font-semibold text-lg" href="/projects.html">Projects</a>
@@ -33,15 +33,15 @@
     </div>
 
     <div>
-      <img class="inline-block cursor-pointer" width="36" src="{{ '/images/novas/sharp-menu.svg' | url }}" onclick="openMenu()" />
+      <img class="inline-block cursor-pointer" width="36" src="{{ '/images/novas/sharp-menu.svg' | url }}" onclick="openMenu()" alt="A hamburguer icon that to show de menu" />
       <a href="https://twitter.com/cleiton_dev" rel="noopener" target="_blank">
-        <img class="inline-block" width="36" src="{{ '/images/novas/twitter.svg' | url }}" />
+        <img class="inline-block" width="36" src="{{ '/images/novas/twitter.svg' | url }}" alt="Twitter logo" />
       </a>
       <a href="https://www.linkedin.com/in/cleiton-luiz-nodejs-javascript-freelancer/" rel="noopener" target="_blank">
-        <img class="inline-block" width="36" src="{{ '/images/novas/linkedin-icon.svg' | url }}" />
+        <img class="inline-block" width="36" src="{{ '/images/novas/linkedin-icon.svg' | url }}" alt="Linkedin logo" />
       </a>
       <a href="https://github.com/clluiz" rel="noopener" target="_blank">
-        <img class="inline-block" width="36" src="{{ '/images/github.svg' | url }}" />
+        <img class="inline-block" width="36" src="{{ '/images/github.svg' | url }}" alt="Github logo" />
       </a>      
     </div>
   </header>
